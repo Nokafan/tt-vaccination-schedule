@@ -742,3 +742,19 @@
 2021-02-04 18:34:20 INFO  VaccinationServiceImpl:92 - Vaccination id: 2 has been updated.
 2021-02-04 18:34:23 INFO  VaccinationServiceImpl:92 - Vaccination id: 2 has been updated.
 2021-02-04 18:34:25 INFO  VaccinationServiceImpl:92 - Vaccination id: 2 has been updated.
+2021-02-04 18:42:33 INFO  DiseaseController:37 - Disease created id: 30 name: asd
+2021-02-04 18:54:18 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 18:54:19 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 18:54:19 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 18:54:19 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 18:54:19 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T18:54:19.113824200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-04, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 18:54:19 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-04 18:54:32 INFO  VaccinationController:46 - Vaccination id: 2 saved.
+2021-02-04 18:54:33 INFO  VaccinationController:46 - Vaccination id: 3 saved.
+2021-02-04 18:54:35 INFO  VaccinationController:46 - Vaccination id: 4 saved.
+2021-02-04 18:54:36 INFO  VaccinationController:46 - Vaccination id: 5 saved.
+2021-02-04 18:54:37 INFO  VaccinationController:46 - Vaccination id: 6 saved.
+2021-02-04 18:54:38 INFO  VaccinationController:46 - Vaccination id: 7 saved.
+2021-02-04 18:54:39 INFO  VaccinationController:46 - Vaccination id: 8 saved.
+2021-02-04 18:54:40 INFO  VaccinationController:46 - Vaccination id: 9 saved.
+2021-02-04 18:54:41 INFO  VaccinationController:46 - Vaccination id: 10 saved.

@@ -16,7 +16,5 @@ public interface GeneralService<T> {
 
     void delete(Long id);
 
-    Page<T> findAllById(Long id, Pageable pageable);
-
     void deleteAllByIds(Iterable<Long> ids);
 }

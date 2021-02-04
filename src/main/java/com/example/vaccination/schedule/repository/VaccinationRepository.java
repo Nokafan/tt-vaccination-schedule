@@ -14,7 +14,7 @@ import java.util.List;
 
 @Repository
 public interface VaccinationRepository extends JpaRepository<Vaccination, Long> {
-    Page<Vaccination> findAllById(Long id, Pageable pageable);
+    Page<Vaccination> findAllByUser_Id(Long id, Pageable pageable);
 
 //    Page<Vaccination> findAllByDisease_IdAndVaccinationDateTimeBefore(Iterable<Long> ids,
 //                                          LocalDateTime localDateTime,

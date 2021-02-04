@@ -70,11 +70,6 @@ public class UserServiceImpl implements UserService {
         userRepository.deleteById(id);
     }
 
-    @Override
-    public Page<User> findAllById(Long id, Pageable pageable) {
-        return userRepository.findAllById(id, pageable);
-    }
-
     @Transactional
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {

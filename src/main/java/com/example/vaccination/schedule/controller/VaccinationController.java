@@ -31,7 +31,7 @@ public class VaccinationController {
 
     @PostMapping("/{user_id}/done")
     public Page<VaccinationResponceDto> getDoneVaccination(@PathVariable(name = "user_id") Long id, Pageable pageable) {
-        return vaccinationService.findAllById(id, pageable).map(vaccinationMapper::entityToDto);
+        return vaccinationService.findAllByUserId(id, pageable).map(vaccinationMapper::entityToDto);
     }
 
 //    @PostMapping("/{user_id}/skipped")
