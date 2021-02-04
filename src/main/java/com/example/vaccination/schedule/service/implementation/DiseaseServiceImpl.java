@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Period;
 import java.util.List;
@@ -23,11 +24,13 @@ public class DiseaseServiceImpl implements DiseaseService {
         this.repository = repository;
     }
 
+    @Transactional
     @Override
     public Disease save(Disease disease) {
         return repository.save(disease);
     }
 
+    @Transactional
     @Override
     public List<Disease> saveAll(Iterable<Disease> diseases) {
         return repository.saveAll(diseases);
@@ -44,6 +47,7 @@ public class DiseaseServiceImpl implements DiseaseService {
                 .orElseThrow(() -> new DataProcessingException("Not found Diseases id: " + id));
     }
 
+    @Transactional
     @Override
     public void delete(Long id) {
         repository.deleteById(id);
@@ -54,11 +58,13 @@ public class DiseaseServiceImpl implements DiseaseService {
         return repository.findAllById(id, pageable);
     }
 
+    @Transactional
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {
         repository.deleteAllByIdIsIn(ids);
     }
 
+    @Transactional
     @Override
     public Disease update(Long id, DiseaseRequestDto requestDto) {
         Disease disease = repository.findById(id)

@@ -53,5 +53,10 @@ public class VaccinationController {
         log.info("Vaccination id: " + id + " deleted.");
     }
 
-
+    @PutMapping("/{id}")
+    public VaccinationResponceDto updateVaccination(@PathVariable(name = "id") Long id,
+                                                    @Valid @RequestBody VaccinationRequestDto requestDto) {
+        Vaccination vaccination = vaccinationService.update(id, requestDto);
+        return vaccinationMapper.entityToDto(vaccination);
+    }
 }

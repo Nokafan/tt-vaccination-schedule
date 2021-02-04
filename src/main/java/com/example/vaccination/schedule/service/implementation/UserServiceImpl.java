@@ -3,21 +3,19 @@ package com.example.vaccination.schedule.service.implementation;
 import com.example.vaccination.schedule.configuration.Constants;
 import com.example.vaccination.schedule.dto.UserRequestDto;
 import com.example.vaccination.schedule.entity.User;
-import com.example.vaccination.schedule.entity.Vaccination;
 import com.example.vaccination.schedule.exception.DataProcessingException;
 import com.example.vaccination.schedule.repository.UserRepository;
 import com.example.vaccination.schedule.service.UserService;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import com.example.vaccination.schedule.service.VaccinationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -30,11 +28,13 @@ public class UserServiceImpl implements UserService {
         this.vaccinationService = vaccinationService;
     }
 
+    @Transactional
     @Override
     public User save(User user) {
         return userRepository.save(user);
     }
 
+    @Transactional
     @Override
     public List<User> saveAll(Iterable<User> users) {
         return userRepository.saveAll(users);
@@ -51,6 +51,7 @@ public class UserServiceImpl implements UserService {
                 new DataProcessingException("Not found User with id: " + id));
     }
 
+    @Transactional
     @Override
     public User update(Long id, UserRequestDto requestDto) {
         User user = userRepository.findById(id).orElseThrow(() -> new DataProcessingException("User id: " + id + " not found"));
@@ -63,14 +64,9 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
+    @Transactional
     @Override
-//    @RestResource(exported = false)
     public void delete(Long id) {
-//        List<Long> vaccinationsId = vaccinationService.getAllByUserId(id)
-//                .stream()
-//                .map(Vaccination::getId)
-//                .collect(Collectors.toList());
-//        vaccinationService.deleteAllByIds(vaccinationsId);
         userRepository.deleteById(id);
     }
 
@@ -79,6 +75,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.findAllById(id, pageable);
     }
 
+    @Transactional
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {
         userRepository.deleteAllByIdIsIn(ids);
