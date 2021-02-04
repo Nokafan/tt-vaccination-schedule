@@ -59,7 +59,7 @@ public class UserController {
     }
 
     @PostMapping("/page")
-    public List<UserResponseDto> getAll(Pageable pageable) {
+    public List<UserResponseDto> getAllUsers(Pageable pageable) {
         return userService.getAll(pageable).getContent()
                 .stream()
                 .map(userMapper::entityToDto)

@@ -35,6 +35,8 @@ public class VaccinationMapper {
         return Vaccination.builder()
                 .email(requestDto.getEmail())
                 .vaccineName(requestDto.getVaccineName())
+                .user(userService.get(requestDto.getUserId()))
+                .disease(diseaseService.get(requestDto.getDiseaseId()))
                 .vaccinationDateTime(LocalDateTime.parse(requestDto.getVaccinationDateTime(),
                         DateTimeFormatter.ofPattern(Constants.PATTERN_DATE_TIME)))
                 .build();
