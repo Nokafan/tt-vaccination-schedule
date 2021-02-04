@@ -1,42 +1,49 @@
 package com.example.vaccination.schedule.service.implementation;
 
-import com.example.vaccination.schedule.entity.Disease;
-import com.example.vaccination.schedule.entity.User;
+import com.example.vaccination.schedule.configuration.Constants;
+import com.example.vaccination.schedule.dto.VaccinationRequestDto;
 import com.example.vaccination.schedule.entity.Vaccination;
 import com.example.vaccination.schedule.exception.DataProcessingException;
 import com.example.vaccination.schedule.repository.VaccinationRepository;
 import com.example.vaccination.schedule.service.DiseaseService;
 import com.example.vaccination.schedule.service.UserService;
 import com.example.vaccination.schedule.service.VaccinationService;
+import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
-import java.time.Period;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.stream.Collectors;
 
+@Log4j
 @Service
 public class VaccinationServiceImpl implements VaccinationService {
     private final VaccinationRepository repository;
-//    private final UserService userService;
-//    private final DiseaseService diseaseService;
+    private final UserService userService;
+    private final DiseaseService diseaseService;
 
     @Autowired
-    public VaccinationServiceImpl(VaccinationRepository repository)
-                                   {
+    public VaccinationServiceImpl(VaccinationRepository repository,
+                                  @Lazy UserService userService,
+                                  @Lazy DiseaseService diseaseService) {
         this.repository = repository;
-
+        this.userService = userService;
+        this.diseaseService = diseaseService;
     }
 
+
+    @Transactional
     @Override
     public Vaccination save(Vaccination vaccination) {
         return repository.save(vaccination);
     }
 
+    @Transactional
     @Override
     public List<Vaccination> saveAll(Iterable<Vaccination> vaccinations) {
         return repository.saveAll(vaccinations);
@@ -53,6 +60,7 @@ public class VaccinationServiceImpl implements VaccinationService {
                 new DataProcessingException("Not found VaccinationHistory with id: " + id));
     }
 
+    @Transactional
     @Override
     public void delete(Long id) {
         repository.deleteById(id);
@@ -63,12 +71,29 @@ public class VaccinationServiceImpl implements VaccinationService {
         return repository.findAllById(id, pageable);
     }
 
+    @Transactional
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {
         repository.deleteAllByIdIsIn(ids);
     }
 
-//    @Override
+    @Transactional
+    @Override
+    public Vaccination update(Long id, VaccinationRequestDto requestDto) {
+        Vaccination vaccination = repository.findById(id).orElseThrow(() ->
+                new DataProcessingException("Not found VaccinationHistory with id: " + id));
+        vaccination.setEmail(requestDto.getEmail());
+        vaccination.setVaccineName(requestDto.getVaccineName());
+        vaccination.setVaccinationDateTime(LocalDateTime.parse(requestDto.getVaccinationDateTime(),
+                DateTimeFormatter.ofPattern(Constants.PATTERN_DATE_TIME)));
+        vaccination.setUser(userService.get(requestDto.getUserId()));
+        vaccination.setDisease(diseaseService.get(requestDto.getDiseaseId()));
+        repository.save(vaccination);
+        log.info("Vaccination id: " + id + " has been updated.");
+        return vaccination;
+    }
+
+    //    @Override
 //    public List<Vaccination> getAllByUserId(Long id) {
 //        return repository.findAllByUser_Id(id);
 //    }
