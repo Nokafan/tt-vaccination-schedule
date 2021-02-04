@@ -11,7 +11,9 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 public class VaccinationResponceDto {
+    private Long id;
     private String vaccineName;
     private LocalDateTime vaccinationDate;
-    private Disease disease;
+    private Long diseaseId;
+    private Long userId;
 }
