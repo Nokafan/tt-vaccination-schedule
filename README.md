@@ -1,1 +1,1 @@
-"# tt-vaccination-schedule" 
+"# tt-disease-schedule" 

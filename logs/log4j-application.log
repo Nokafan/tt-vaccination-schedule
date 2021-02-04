@@ -1,0 +1,632 @@
+2021-01-28 15:23:43 INFO  ApllicationStartedListener:35 - Application started
+2021-01-28 15:23:43 INFO  ApllicationStartedListener:54 - Vaccination saved
+2021-01-28 15:24:13 INFO  ApllicationStartedListener:34 - Application started
+2021-01-28 15:24:13 INFO  ApllicationStartedListener:53 - Vaccination saved
+2021-01-28 15:37:22 INFO  ApllicationStartedListener:40 - Application started
+2021-01-28 15:37:22 INFO  ApllicationStartedListener:59 - Vaccination saved
+2021-01-28 15:37:22 INFO  ApllicationStartedListener:67 - User created
+2021-01-28 15:37:22 INFO  ApllicationStartedListener:69 - User saved
+2021-01-28 15:37:22 INFO  ApllicationStartedListener:75 - VaccinationHistory created VaccinationHistory(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T15:37:22.994718700)
+2021-01-28 15:37:23 INFO  ApllicationStartedListener:77 - VaccinationHistory saved
+2021-01-28 15:54:18 INFO  ApllicationStartedListener:40 - Application started
+2021-01-28 15:54:19 INFO  ApllicationStartedListener:56 - Vaccination saved
+2021-01-28 15:54:19 INFO  ApllicationStartedListener:65 - User created
+2021-01-28 15:54:19 INFO  ApllicationStartedListener:67 - User saved
+2021-01-28 15:54:19 INFO  ApllicationStartedListener:75 - VaccinationHistory created VaccinationHistory(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T15:54:19.082538600, disease=[Vaccination(id=1, disease=Гепатит В2, vaccinationAge=P1D, vaccinated=false)])
+2021-01-28 15:54:19 INFO  ApllicationStartedListener:77 - VaccinationHistory saved
+2021-01-28 15:56:31 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 15:56:31 INFO  ApllicationStartedListener:57 - Vaccination saved
+2021-01-28 15:56:31 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 15:56:31 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 15:56:31 INFO  ApllicationStartedListener:76 - VaccinationHistory created VaccinationHistory(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T15:56:31.574979700, disease=[Vaccination(id=1, disease=Гепатит В2, vaccinationAge=P1D, vaccinated=false)])
+2021-01-28 15:56:31 INFO  ApllicationStartedListener:78 - VaccinationHistory saved
+2021-01-28 16:10:18 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 16:11:11 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 16:11:12 INFO  ApllicationStartedListener:57 - Vaccination saved
+2021-01-28 16:11:12 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 16:11:12 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 16:11:12 INFO  ApllicationStartedListener:76 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T16:11:12.195658900, disease=[Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D, vaccinated=false)])
+2021-01-28 16:11:12 INFO  ApllicationStartedListener:78 - VaccinationHistory saved
+2021-01-28 16:21:10 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 16:21:10 INFO  ApllicationStartedListener:57 - Vaccination saved
+2021-01-28 16:21:10 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 16:21:10 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 16:21:10 INFO  ApllicationStartedListener:76 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T16:21:10.281643500, disease=[Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D, vaccinated=false)])
+2021-01-28 16:21:10 INFO  ApllicationStartedListener:78 - VaccinationHistory saved
+2021-01-28 18:14:21 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 18:14:21 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 18:14:21 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 18:14:21 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 18:14:21 INFO  ApllicationStartedListener:76 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T18:14:21.676238100, user=null, disease=Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D))
+2021-01-28 18:18:43 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 18:18:43 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 18:18:43 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 18:18:43 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 18:18:43 INFO  ApllicationStartedListener:76 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T18:18:43.629257100, user=null, disease=Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D))
+2021-01-28 18:21:57 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 18:21:57 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 18:21:57 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 18:21:57 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 18:21:57 INFO  ApllicationStartedListener:76 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T18:21:57.736985300, disease=Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D))
+2021-01-28 18:33:45 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 18:33:45 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 18:33:45 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 18:33:45 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 18:33:45 INFO  ApllicationStartedListener:81 - VaccinationHistory saved
+2021-01-28 19:55:53 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 19:55:53 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 19:55:53 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 19:55:53 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 19:55:53 INFO  ApllicationStartedListener:81 - VaccinationHistory saved
+2021-01-28 20:23:35 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 20:23:36 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 20:23:36 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 20:23:36 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 20:23:36 INFO  ApllicationStartedListener:81 - VaccinationHistory saved
+2021-01-28 20:24:47 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 20:24:47 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 20:24:47 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 20:24:47 INFO  ApllicationStartedListener:68 - User saved
+2021-01-28 20:24:47 INFO  ApllicationStartedListener:76 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-28T20:24:47.944610500, user=null, disease=Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D))
+2021-01-28 20:30:10 INFO  ApllicationStartedListener:41 - Application started
+2021-01-28 20:30:10 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-28 20:30:10 INFO  ApllicationStartedListener:66 - User created
+2021-01-28 20:30:10 INFO  ApllicationStartedListener:68 - User saved
+2021-01-29 11:11:10 INFO  ApllicationStartedListener:41 - Application started
+2021-01-29 11:11:10 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-29 11:11:10 INFO  ApllicationStartedListener:66 - User created
+2021-01-29 11:11:10 INFO  ApllicationStartedListener:68 - User saved
+2021-01-29 11:11:10 INFO  ApllicationStartedListener:78 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-29T11:11:10.659128400, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-29T11:11:11, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D))
+2021-01-29 11:11:10 INFO  ApllicationStartedListener:82 - VaccinationHistory saved
+2021-01-29 11:23:14 INFO  ApllicationStartedListener:41 - Application started
+2021-01-29 11:23:14 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-29 11:23:14 INFO  ApllicationStartedListener:66 - User created
+2021-01-29 11:23:14 INFO  ApllicationStartedListener:68 - User saved
+2021-01-29 11:23:14 INFO  ApllicationStartedListener:78 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-29T11:23:14.716320100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-29T11:23:15, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D))
+2021-01-29 11:23:14 INFO  ApllicationStartedListener:82 - VaccinationHistory saved
+2021-01-29 11:24:15 INFO  ApllicationStartedListener:41 - Application started
+2021-01-29 11:24:16 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-29 11:24:16 INFO  ApllicationStartedListener:66 - User created
+2021-01-29 11:24:16 INFO  ApllicationStartedListener:68 - User saved
+2021-01-29 11:25:45 INFO  ApllicationStartedListener:41 - Application started
+2021-01-29 11:25:45 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-29 11:25:45 INFO  ApllicationStartedListener:66 - User created
+2021-01-29 11:25:45 INFO  ApllicationStartedListener:68 - User saved
+2021-01-29 11:26:59 INFO  ApllicationStartedListener:41 - Application started
+2021-01-29 11:26:59 INFO  ApllicationStartedListener:57 - Diseases saved
+2021-01-29 11:26:59 INFO  ApllicationStartedListener:66 - User created
+2021-01-29 11:26:59 INFO  ApllicationStartedListener:68 - User saved
+2021-01-29 11:26:59 INFO  ApllicationStartedListener:78 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-29T11:26:59.727433, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-29T11:27, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатит В2, vaccinationAge=P1D))
+2021-01-29 11:26:59 INFO  ApllicationStartedListener:82 - VaccinationHistory saved
+2021-01-29 11:58:12 INFO  ApllicationStartedListener:47 - Application started
+2021-01-29 11:58:12 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-29 11:58:12 INFO  ApllicationStartedListener:88 - User created
+2021-01-29 11:58:12 INFO  ApllicationStartedListener:90 - User saved
+2021-01-29 11:58:13 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-29T11:58:13.029964600, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-29T11:58:13, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-29 11:58:13 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 16:09:57 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 16:09:57 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 16:09:57 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 16:09:57 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 16:09:57 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T16:09:57.536245700, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T16:09:57, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 16:09:57 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 16:21:47 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 16:21:47 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 16:21:47 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 16:21:47 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 16:21:47 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T16:21:47.548405800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T16:21:47, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 16:21:47 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 16:29:26 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 16:29:27 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 16:29:27 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 16:29:27 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 16:29:27 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T16:29:27.134212500, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T16:29:27, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 16:29:27 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 16:35:14 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 16:35:14 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 16:35:14 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 16:35:14 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 16:35:14 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T16:35:14.745692900, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T16:35:15, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 16:35:14 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 16:35:36 INFO  DiseaseController:35 - Disease created id: 30 name: null
+2021-01-30 16:39:11 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 16:39:11 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 16:39:11 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 16:39:11 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 16:39:11 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T16:39:11.955373900, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T16:39:12, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 16:39:12 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 16:44:24 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 16:44:24 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 16:44:24 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 16:44:24 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 16:44:24 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T16:44:24.495651600, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T16:44:24, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 16:44:24 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 18:08:48 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 18:08:48 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 18:08:48 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 18:08:48 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 18:08:49 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T18:08:48.997776100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T18:08:49, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 18:08:49 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 18:08:56 INFO  DiseaseController:35 - Disease created id: 30 name: null
+2021-01-30 18:12:57 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 18:12:57 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 18:12:57 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 18:12:57 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 18:12:57 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T18:12:57.884133, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T18:12:58, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 18:12:57 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 18:35:46 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 18:35:47 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 18:35:47 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 18:35:47 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 18:35:47 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T18:35:47.222762300, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T18:35:47, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 18:35:47 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 18:39:44 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 18:39:45 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 18:39:45 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 18:39:45 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 18:39:45 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T18:39:45.348454800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T18:39:45, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 18:39:45 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 19:10:25 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 19:10:25 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 19:10:25 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 19:10:25 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 19:10:26 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T19:10:25.996584400, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T19:10:26, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 19:10:26 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 20:21:15 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 20:21:16 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 20:21:16 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 20:21:16 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 20:21:16 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T20:21:16.354478200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T20:21:16, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 20:21:16 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 20:38:48 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 20:38:48 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 20:38:49 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 20:38:49 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 20:38:49 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T20:38:49.086896400, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T20:38:49, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 20:38:49 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 22:43:33 INFO  ApllicationStartedListener:48 - Application started
+2021-01-30 22:43:33 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-01-30 22:43:33 INFO  ApllicationStartedListener:89 - User created
+2021-01-30 22:43:33 INFO  ApllicationStartedListener:91 - User saved
+2021-01-30 22:43:33 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T22:43:33.949217600, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T22:43:34, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 22:43:34 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-01-30 22:49:05 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 22:49:05 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 22:49:05 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 22:49:05 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 22:49:05 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T22:49:05.778878100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T22:49:06, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 22:49:05 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 22:51:45 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 22:51:46 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 22:51:46 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 22:51:46 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 22:51:46 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T22:51:46.198069900, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T22:51:46, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 22:51:46 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 22:55:05 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 22:55:05 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 22:55:05 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 22:55:05 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 22:55:05 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T22:55:05.564576100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T22:55:05, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 22:55:05 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-30 23:39:28 INFO  ApllicationStartedListener:47 - Application started
+2021-01-30 23:39:28 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-30 23:39:28 INFO  ApllicationStartedListener:88 - User created
+2021-01-30 23:39:28 INFO  ApllicationStartedListener:90 - User saved
+2021-01-30 23:39:28 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-30T23:39:28.752506, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-30T23:39:29, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-30 23:39:28 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-31 00:11:45 INFO  ApllicationStartedListener:47 - Application started
+2021-01-31 00:11:45 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-31 00:11:45 INFO  ApllicationStartedListener:88 - User created
+2021-01-31 00:11:45 INFO  ApllicationStartedListener:90 - User saved
+2021-01-31 00:11:45 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-31T00:11:45.740989800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-31T00:11:46, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-01-31 00:11:45 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-31 22:02:02 INFO  ApllicationStartedListener:47 - Application started
+2021-01-31 22:02:03 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-31 22:02:03 INFO  ApllicationStartedListener:88 - User created
+2021-01-31 22:02:03 INFO  ApllicationStartedListener:90 - User saved
+2021-01-31 22:02:03 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-31T22:02:03.446948500, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-31T22:02:03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=null), deleted=null)
+2021-01-31 22:02:03 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-01-31 22:05:11 INFO  ApllicationStartedListener:47 - Application started
+2021-01-31 22:05:12 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-01-31 22:05:12 INFO  ApllicationStartedListener:88 - User created
+2021-01-31 22:05:12 INFO  ApllicationStartedListener:90 - User saved
+2021-01-31 22:05:12 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-01-31T22:05:12.607592700, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-01-31T22:05:12, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-01-31 22:05:12 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 18:05:45 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 18:05:46 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 18:05:46 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 18:05:46 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 18:05:46 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T18:05:46.413587200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T18:05:46, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 18:05:46 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 18:44:28 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 18:44:28 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 18:44:28 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 18:44:28 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 18:44:29 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T18:44:29.085109200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T18:44:29, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 18:44:29 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 18:46:10 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 18:46:10 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 18:46:10 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 18:46:10 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 18:46:10 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T18:46:10.548835800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T18:46:10, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 18:46:10 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 18:54:55 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 18:54:55 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 18:54:55 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 18:54:55 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 18:54:55 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T18:54:55.858625900, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T18:54:56, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 18:54:56 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 19:50:08 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 19:50:08 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 19:50:08 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 19:50:08 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 19:50:08 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T19:50:08.806940100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T19:50:09, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 19:50:08 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 19:53:44 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 19:53:44 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 19:53:44 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 19:53:44 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 19:53:44 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T19:53:44.802297400, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T19:53:45, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 19:53:44 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 22:30:52 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 22:30:52 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 22:30:52 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 22:30:52 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 22:30:53 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T22:30:53.012128800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T22:30:53, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 22:30:53 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 22:43:47 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 22:43:47 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 22:43:47 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 22:43:47 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 22:43:48 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T22:43:48.015323500, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T22:43:48, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 22:43:48 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 22:45:44 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 22:45:44 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 22:45:44 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 22:45:44 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 22:45:44 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T22:45:44.641020100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T22:45:45, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 22:45:44 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 22:49:01 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 22:49:01 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 22:49:01 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 22:49:01 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 22:49:01 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T22:49:01.815927, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T22:49:02, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 22:49:01 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 23:19:53 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 23:19:53 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 23:19:53 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 23:19:53 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 23:19:53 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T23:19:53.603080600, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T23:19:53, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 23:19:53 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 23:22:51 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 23:22:51 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 23:22:51 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 23:22:51 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 23:22:51 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T23:22:51.881027, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T23:22:52, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 23:22:51 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 23:31:21 INFO  UserController:39 - User created id: 2 email: test@i.ua
+2021-02-02 23:31:33 INFO  UserController:39 - User created id: 3 email: test@i.ua
+2021-02-02 23:31:34 INFO  UserController:39 - User created id: 4 email: test@i.ua
+2021-02-02 23:31:35 INFO  UserController:39 - User created id: 5 email: test@i.ua
+2021-02-02 23:33:21 INFO  UserController:39 - User created id: 6 email: test@ii.ua
+2021-02-02 23:33:34 INFO  UserController:39 - User created id: 7 email: test@ii.ua
+2021-02-02 23:33:34 INFO  UserController:39 - User created id: 8 email: test@ii.ua
+2021-02-02 23:33:35 INFO  UserController:39 - User created id: 9 email: test@ii.ua
+2021-02-02 23:33:36 INFO  UserController:39 - User created id: 10 email: test@ii.ua
+2021-02-02 23:33:37 INFO  UserController:39 - User created id: 11 email: test@ii.ua
+2021-02-02 23:44:43 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 23:44:44 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 23:44:44 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 23:44:44 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 23:44:44 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T23:44:44.482506500, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T23:44:44, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 23:44:44 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 23:45:24 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 23:45:25 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 23:45:25 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 23:45:25 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 23:45:25 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T23:45:25.125190200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T23:45:25, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 23:45:25 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 23:53:28 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 23:53:28 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 23:53:28 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 23:53:28 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 23:53:28 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T23:53:28.839592300, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T23:53:29, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 23:53:28 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-02 23:57:05 INFO  ApllicationStartedListener:47 - Application started
+2021-02-02 23:57:05 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-02 23:57:05 INFO  ApllicationStartedListener:88 - User created
+2021-02-02 23:57:05 INFO  ApllicationStartedListener:90 - User saved
+2021-02-02 23:57:06 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-02T23:57:05.906720800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-02T23:57:06, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-02 23:57:06 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-03 00:02:14 INFO  ApllicationStartedListener:47 - Application started
+2021-02-03 00:02:14 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-03 00:02:14 INFO  ApllicationStartedListener:88 - User created
+2021-02-03 00:02:14 INFO  ApllicationStartedListener:90 - User saved
+2021-02-03 00:02:14 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T00:02:14.554472300, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03T00:02:14, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 00:02:14 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-03 00:07:45 INFO  ApllicationStartedListener:47 - Application started
+2021-02-03 00:07:45 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-03 00:07:45 INFO  ApllicationStartedListener:88 - User created
+2021-02-03 00:07:45 INFO  ApllicationStartedListener:90 - User saved
+2021-02-03 00:07:45 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T00:07:45.867545800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03T00:07:46, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 00:07:45 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-03 00:11:56 INFO  ApllicationStartedListener:47 - Application started
+2021-02-03 00:11:56 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-03 00:11:56 INFO  ApllicationStartedListener:88 - User created
+2021-02-03 00:11:56 INFO  ApllicationStartedListener:90 - User saved
+2021-02-03 00:11:56 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T00:11:56.821965, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03T00:11:57, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 00:11:56 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-03 00:15:47 INFO  ApllicationStartedListener:47 - Application started
+2021-02-03 00:15:47 INFO  ApllicationStartedListener:79 - Diseases saved
+2021-02-03 00:15:47 INFO  ApllicationStartedListener:88 - User created
+2021-02-03 00:15:47 INFO  ApllicationStartedListener:90 - User saved
+2021-02-03 00:15:47 INFO  ApllicationStartedListener:100 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T00:15:47.534111800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03T00:15:47, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 00:15:47 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-03 00:20:31 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 00:20:31 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 00:20:31 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 00:20:31 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 00:20:31 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T00:20:31.750233900, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 00:20:31 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 00:20:34 INFO  UserController:39 - User created id: 2 email: test@ii.ua
+2021-02-03 00:23:04 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 00:23:04 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 00:23:04 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 00:23:04 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 00:23:04 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T00:23:04.918494200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 00:23:04 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 00:24:11 INFO  UserController:39 - User created id: 2 email: test@ii.ua
+2021-02-03 00:24:21 INFO  UserController:39 - User created id: 3 email: test1@ii.ua
+2021-02-03 01:25:34 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:25:35 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:25:35 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:25:35 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:25:35 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:25:35.217810100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:25:35 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:25:44 INFO  UserController:39 - User created id: 2 email: test1@ii.ua
+2021-02-03 01:28:49 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:28:49 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:28:49 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:28:49 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:28:49 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:28:49.742623, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:28:49 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:32:16 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:32:16 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:32:16 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:32:16 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:32:16 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:32:16.504409700, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:32:16 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:35:24 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:35:25 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:35:25 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:35:25 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:35:25 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:35:25.312251, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:35:25 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:37:40 INFO  DiseaseController:37 - Disease created id: 30 name: null
+2021-02-03 01:38:41 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:38:41 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:38:41 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:38:41 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:38:41 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:38:41.561240300, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:38:41 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:40:37 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:40:37 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:40:37 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:40:37 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:40:37 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:40:37.804257800, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:40:37 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:41:29 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:41:29 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:41:29 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:41:29 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:41:29 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:41:29.642732500, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:41:29 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:44:11 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:44:11 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:44:11 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:44:11 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:44:11 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:44:11.710772900, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:44:11 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:44:19 INFO  UserController:41 - User created id: 2 email: test1@ii.ua
+2021-02-03 01:44:37 INFO  UserController:41 - User created id: 3 email: test@ii.ua
+2021-02-03 01:49:51 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:49:51 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 01:49:51 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 01:49:51 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 01:49:51 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:49:51.634288200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:49:51 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 01:50:02 INFO  UserController:41 - User created id: 2 email: test2@ii.ua
+2021-02-03 01:50:17 INFO  UserController:41 - User created id: 3 email: test@ii.ua
+2021-02-03 01:57:11 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:57:12 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-03 01:57:12 INFO  ApllicationStartedListener:90 - User created
+2021-02-03 01:57:12 INFO  ApllicationStartedListener:92 - User saved
+2021-02-03 01:57:12 INFO  ApllicationStartedListener:102 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:57:12.121446100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 01:57:12 INFO  ApllicationStartedListener:106 - VaccinationHistory saved
+2021-02-03 01:58:28 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 01:58:28 INFO  ApllicationStartedListener:82 - Diseases saved
+2021-02-03 01:58:28 INFO  ApllicationStartedListener:91 - User created
+2021-02-03 01:58:28 INFO  ApllicationStartedListener:93 - User saved
+2021-02-03 01:58:29 INFO  ApllicationStartedListener:103 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T01:58:29.025515, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Кору, краснухи, паротиту, vaccinationAge=P600Y, deleted=false), deleted=false)
+2021-02-03 01:58:29 INFO  ApllicationStartedListener:107 - VaccinationHistory saved
+2021-02-03 02:02:06 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 02:02:06 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 02:02:06 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 02:02:06 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 02:02:06 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T02:02:06.508311600, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 02:02:06 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 02:09:32 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 02:09:32 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 02:09:32 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 02:09:32 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 02:09:33 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T02:09:33.058257300, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 02:09:33 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 10:32:46 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 10:32:47 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 10:32:47 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 10:32:47 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 10:32:47 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T10:32:47.349188700, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 10:32:47 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 11:20:48 INFO  UserController:41 - User created id: 2 email: test@ii.ua
+2021-02-03 11:24:02 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 11:24:03 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 11:24:03 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 11:24:03 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 11:24:03 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T11:24:03.236322200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 11:24:03 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 11:24:08 INFO  UserController:41 - User created id: 2 email: test@ii.ua
+2021-02-03 11:27:27 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 11:27:27 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 11:27:27 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 11:27:27 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 11:27:27 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T11:27:27.550691100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 11:27:27 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 11:27:39 INFO  DiseaseController:36 - Disease created id: 30 name: asd
+2021-02-03 11:27:48 INFO  DiseaseController:36 - Disease created id: 31 name: asd
+2021-02-03 11:45:57 INFO  UserController:41 - User created id: 2 email: test@ii.ua
+2021-02-03 11:46:55 INFO  DiseaseController:36 - Disease created id: 32 name: Грипу
+2021-02-03 11:47:07 INFO  DiseaseController:36 - Disease created id: 33 name: Грипу
+2021-02-03 11:49:23 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 11:49:24 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 11:49:24 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 11:49:24 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 11:49:24 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T11:49:24.108910, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password, deleted=false), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D, deleted=false), deleted=false)
+2021-02-03 11:49:24 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 11:49:32 INFO  UserController:41 - User created id: 2 email: test@ii.ua
+2021-02-03 11:49:37 INFO  UserController:49 - User id: 2 updated.
+2021-02-03 11:50:13 INFO  UserController:49 - User id: 2 updated.
+2021-02-03 11:53:49 INFO  UserController:49 - User id: 2 updated.
+2021-02-03 11:55:55 INFO  UserController:57 - User id: 2 deleted.
+2021-02-03 12:30:29 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 12:30:29 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 12:30:29 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 12:30:29 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 12:30:29 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T12:30:29.937612600, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-03 12:30:29 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-03 12:30:40 INFO  UserController:42 - User created id: 2 email: test@ii.ua
+2021-02-03 12:30:48 INFO  DiseaseController:36 - Disease created id: 30 name: Грипу
+2021-02-03 13:53:18 INFO  DiseaseController:36 - Disease created id: 31 name: Грипу
+2021-02-03 14:16:34 INFO  ApllicationStartedListener:48 - Application started
+2021-02-03 14:16:35 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-03 14:16:35 INFO  ApllicationStartedListener:89 - User created
+2021-02-03 14:16:35 INFO  ApllicationStartedListener:91 - User saved
+2021-02-03 14:16:35 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDate=2021-02-03T14:16:35.217457100, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-03, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-03 14:16:35 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-04 13:34:37 INFO  ApllicationStartedListener:48 - Application started
+2021-02-04 13:34:38 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-04 13:34:38 INFO  ApllicationStartedListener:89 - User created
+2021-02-04 13:34:38 INFO  ApllicationStartedListener:91 - User saved
+2021-02-04 13:34:38 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T13:34:38.134499400, user=null, disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 13:34:38 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-04 13:41:54 INFO  ApllicationStartedListener:48 - Application started
+2021-02-04 13:41:54 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-04 13:41:54 INFO  ApllicationStartedListener:89 - User created
+2021-02-04 13:41:54 INFO  ApllicationStartedListener:91 - User saved
+2021-02-04 13:43:52 INFO  ApllicationStartedListener:48 - Application started
+2021-02-04 13:43:52 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-04 13:43:52 INFO  ApllicationStartedListener:89 - User created
+2021-02-04 13:43:52 INFO  ApllicationStartedListener:91 - User saved
+2021-02-04 13:49:56 INFO  ApllicationStartedListener:48 - Application started
+2021-02-04 13:49:57 INFO  ApllicationStartedListener:80 - Diseases saved
+2021-02-04 13:49:57 INFO  ApllicationStartedListener:89 - User created
+2021-02-04 13:49:57 INFO  ApllicationStartedListener:91 - User saved
+2021-02-04 13:49:57 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-04 14:04:41 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:04:41 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:04:41 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:04:41 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:06:49 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:06:49 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:06:49 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:06:49 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:07:15 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:07:15 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:07:15 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:07:15 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:07:52 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:07:53 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:07:53 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:07:53 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:08:47 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:08:47 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:08:47 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:08:47 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:12:47 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:12:47 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:12:47 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:12:47 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:12:47 INFO  ApllicationStartedListener:102 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T14:12:47.699902100, disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 14:12:47 INFO  ApllicationStartedListener:108 - VaccinationHistory saved
+2021-02-04 14:15:59 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:16:00 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:16:00 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:16:00 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:16:44 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:16:45 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:16:45 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:16:45 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:16:45 INFO  ApllicationStartedListener:102 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T14:16:45.461946500, user=null, disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 14:16:45 INFO  ApllicationStartedListener:108 - VaccinationHistory saved
+2021-02-04 14:20:42 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:20:43 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:20:43 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:20:43 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:21:54 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:21:54 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:21:54 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:21:54 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:23:12 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:23:12 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:23:12 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:23:12 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:23:13 INFO  ApllicationStartedListener:102 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T14:23:13.070809200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-04, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 14:23:13 INFO  ApllicationStartedListener:108 - VaccinationHistory saved
+2021-02-04 14:28:12 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:28:13 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:28:13 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:28:13 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:29:19 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:29:19 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:29:19 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:29:19 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:30:33 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:30:33 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:30:33 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:30:33 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:32:22 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:32:22 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:32:22 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:32:37 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:34:02 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:34:03 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:34:03 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:34:07 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:35:18 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:35:18 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:35:18 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:35:22 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:35:32 INFO  ApllicationStartedListener:102 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T14:35:24.956193200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-04, email=test@i.ua, password=password, vaccination=null), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 14:35:32 INFO  ApllicationStartedListener:105 - VaccinationHistory saved
+2021-02-04 14:38:52 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:38:53 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:38:53 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:38:57 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:39:09 INFO  ApllicationStartedListener:102 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T14:39:09.015036200, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-04, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 14:44:46 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:44:46 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:44:46 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:44:46 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:44:46 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T14:44:46.553673500, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-04, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 14:44:46 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-04 14:46:35 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 14:46:35 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 14:46:35 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 14:46:35 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 14:46:35 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T14:46:35.346500500, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-04, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 14:46:35 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
+2021-02-04 15:01:32 INFO  ApllicationStartedListener:49 - Application started
+2021-02-04 15:01:33 INFO  ApllicationStartedListener:81 - Diseases saved
+2021-02-04 15:01:33 INFO  ApllicationStartedListener:90 - User created
+2021-02-04 15:01:33 INFO  ApllicationStartedListener:92 - User saved
+2021-02-04 15:01:33 INFO  ApllicationStartedListener:101 - VaccinationHistory created Vaccination(id=null, email=test@i.ua, vaccineName=OOO Дарниця, vaccinationDateTime=2021-02-04T15:01:33.258489600, user=User(id=1, name=Bob, familyName=Marley, dateOfBirth=2021-02-04, email=test@i.ua, password=password), disease=Disease(id=1, disease=Гепатиту В, vaccinationAge=P1D))
+2021-02-04 15:01:33 INFO  ApllicationStartedListener:104 - VaccinationHistory saved
