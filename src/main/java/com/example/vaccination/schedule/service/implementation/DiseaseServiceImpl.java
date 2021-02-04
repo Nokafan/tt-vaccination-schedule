@@ -53,11 +53,6 @@ public class DiseaseServiceImpl implements DiseaseService {
         repository.deleteById(id);
     }
 
-    @Override
-    public Page<Disease> findAllById(Long id, Pageable pageable) {
-        return repository.findAllById(id, pageable);
-    }
-
     @Transactional
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {

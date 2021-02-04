@@ -67,8 +67,8 @@ public class VaccinationServiceImpl implements VaccinationService {
     }
 
     @Override
-    public Page<Vaccination> findAllById(Long id, Pageable pageable) {
-        return repository.findAllById(id, pageable);
+    public Page<Vaccination> findAllByUserId(Long id, Pageable pageable) {
+        return repository.findAllByUser_Id(id, pageable);
     }
 
     @Transactional
