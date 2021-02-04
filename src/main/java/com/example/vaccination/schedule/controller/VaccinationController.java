@@ -11,12 +11,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @Log4j
-@RestController("/api/vaccination")
+@RestController
+@RequestMapping("/api/vaccination")
 @Validated
 public class VaccinationController {
     private final VaccinationService vaccinationService;
@@ -39,7 +40,7 @@ public class VaccinationController {
 //    }
 
     @PostMapping
-    public VaccinationResponceDto createVaccination(VaccinationRequestDto requestDto) {
+    public VaccinationResponceDto createVaccination(@Valid @RequestBody VaccinationRequestDto requestDto) {
         Vaccination vaccination = vaccinationMapper.dtoToEntity(requestDto);
         Vaccination savedVaccination = vaccinationService.save(vaccination);
         log.info("Vaccination id: " + savedVaccination.getId() + " saved.");
