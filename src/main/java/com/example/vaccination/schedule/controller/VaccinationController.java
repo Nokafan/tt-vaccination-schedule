@@ -46,4 +46,12 @@ public class VaccinationController {
         log.info("Vaccination id: " + savedVaccination.getId() + " saved.");
         return vaccinationMapper.entityToDto(savedVaccination);
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteVaccination(@PathVariable(name = "id") Long id) {
+        vaccinationService.delete(id);
+        log.info("Vaccination id: " + id + " deleted.");
+    }
+
+
 }
