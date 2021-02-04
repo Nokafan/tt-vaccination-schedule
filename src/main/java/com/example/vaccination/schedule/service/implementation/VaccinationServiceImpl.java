@@ -23,15 +23,15 @@ import java.util.List;
 @Log4j
 @Service
 public class VaccinationServiceImpl implements VaccinationService {
-    private final VaccinationRepository repository;
+    private final VaccinationRepository vaccinationRepository;
     private final UserService userService;
     private final DiseaseService diseaseService;
 
     @Autowired
-    public VaccinationServiceImpl(VaccinationRepository repository,
+    public VaccinationServiceImpl(VaccinationRepository vaccinationRepository,
                                   @Lazy UserService userService,
                                   @Lazy DiseaseService diseaseService) {
-        this.repository = repository;
+        this.vaccinationRepository = vaccinationRepository;
         this.userService = userService;
         this.diseaseService = diseaseService;
     }
@@ -40,47 +40,47 @@ public class VaccinationServiceImpl implements VaccinationService {
     @Transactional
     @Override
     public Vaccination save(Vaccination vaccination) {
-        return repository.save(vaccination);
+        return vaccinationRepository.save(vaccination);
     }
 
     @Transactional
     @Override
     public List<Vaccination> saveAll(Iterable<Vaccination> vaccinations) {
-        return repository.saveAll(vaccinations);
+        return vaccinationRepository.saveAll(vaccinations);
     }
 
     @Override
     public Page<Vaccination> getAll(Pageable pageable) {
-        return repository.findAll(pageable);
+        return vaccinationRepository.findAll(pageable);
     }
 
     @Override
     public Vaccination get(Long id) {
-        return repository.findById(id).orElseThrow(() ->
+        return vaccinationRepository.findById(id).orElseThrow(() ->
                 new DataProcessingException("Not found VaccinationHistory with id: " + id));
     }
 
     @Transactional
     @Override
     public void delete(Long id) {
-        repository.deleteById(id);
+        vaccinationRepository.deleteById(id);
     }
 
     @Override
     public Page<Vaccination> findAllByUserId(Long id, Pageable pageable) {
-        return repository.findAllByUser_Id(id, pageable);
+        return vaccinationRepository.findAllByUser_Id(id, pageable);
     }
 
     @Transactional
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {
-        repository.deleteAllByIdIsIn(ids);
+        vaccinationRepository.deleteAllByIdIsIn(ids);
     }
 
     @Transactional
     @Override
     public Vaccination update(Long id, VaccinationRequestDto requestDto) {
-        Vaccination vaccination = repository.findById(id).orElseThrow(() ->
+        Vaccination vaccination = vaccinationRepository.findById(id).orElseThrow(() ->
                 new DataProcessingException("Not found VaccinationHistory with id: " + id));
         vaccination.setEmail(requestDto.getEmail());
         vaccination.setVaccineName(requestDto.getVaccineName());
@@ -88,7 +88,7 @@ public class VaccinationServiceImpl implements VaccinationService {
                 DateTimeFormatter.ofPattern(Constants.PATTERN_DATE_TIME)));
         vaccination.setUser(userService.get(requestDto.getUserId()));
         vaccination.setDisease(diseaseService.get(requestDto.getDiseaseId()));
-        repository.save(vaccination);
+        vaccinationRepository.save(vaccination);
         log.info("Vaccination id: " + id + " has been updated.");
         return vaccination;
     }
