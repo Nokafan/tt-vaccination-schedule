@@ -1,10 +1,13 @@
 package com.example.vaccination.schedule.controller;
 
+import com.example.vaccination.schedule.dto.DiseaseResponseDto;
 import com.example.vaccination.schedule.dto.VaccinationRequestDto;
 import com.example.vaccination.schedule.dto.VaccinationResponceDto;
 import com.example.vaccination.schedule.entity.Disease;
 import com.example.vaccination.schedule.entity.Vaccination;
+import com.example.vaccination.schedule.mapper.DiseaseMapper;
 import com.example.vaccination.schedule.mapper.VaccinationMapper;
+import com.example.vaccination.schedule.service.DiseaseService;
 import com.example.vaccination.schedule.service.VaccinationService;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,11 +25,18 @@ import javax.validation.Valid;
 public class VaccinationController {
     private final VaccinationService vaccinationService;
     private final VaccinationMapper vaccinationMapper;
+    private final DiseaseService diseaseService;
+    private final DiseaseMapper diseaseMapper;
 
     @Autowired
-    public VaccinationController(VaccinationService vaccinationService, VaccinationMapper vaccinationMapper) {
+    public VaccinationController(VaccinationService vaccinationService,
+                                 VaccinationMapper vaccinationMapper,
+                                 DiseaseService diseaseService,
+                                 DiseaseMapper diseaseMapper) {
         this.vaccinationService = vaccinationService;
         this.vaccinationMapper = vaccinationMapper;
+        this.diseaseService = diseaseService;
+        this.diseaseMapper = diseaseMapper;
     }
 
     @PostMapping("/{user_id}/done")
@@ -34,10 +44,10 @@ public class VaccinationController {
         return vaccinationService.findAllByUserId(id, pageable).map(vaccinationMapper::entityToDto);
     }
 
-//    @PostMapping("/{user_id}/skipped")
-//    public Page<Disease> getSkippedVaccination(@PathVariable(name = "user_id") Long id, Pageable pageable) {
-//        return vaccinationService.getAllSkippedByUserId(id, pageable);
-//    }
+    @PostMapping("/{user_id}/skipped")
+    public Page<DiseaseResponseDto> getSkippedVaccination(@PathVariable(name = "user_id") Long id, Pageable pageable) {
+        return diseaseService.findAllSkipped(id, pageable).map(diseaseMapper::entityToDto);
+    }
 
     @PostMapping
     public VaccinationResponceDto createVaccination(@Valid @RequestBody VaccinationRequestDto requestDto) {

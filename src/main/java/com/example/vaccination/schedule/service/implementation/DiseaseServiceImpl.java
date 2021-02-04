@@ -1,27 +1,33 @@
 package com.example.vaccination.schedule.service.implementation;
 
-import com.example.vaccination.schedule.configuration.Constants;
 import com.example.vaccination.schedule.dto.DiseaseRequestDto;
 import com.example.vaccination.schedule.entity.Disease;
+import com.example.vaccination.schedule.entity.User;
 import com.example.vaccination.schedule.exception.DataProcessingException;
 import com.example.vaccination.schedule.repository.DiseaseRepository;
 import com.example.vaccination.schedule.service.DiseaseService;
+import com.example.vaccination.schedule.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.time.Period;
 import java.util.List;
 
 @Service
 public class DiseaseServiceImpl implements DiseaseService {
     private final DiseaseRepository repository;
+    private final UserService userService;
 
     @Autowired
-    public DiseaseServiceImpl(DiseaseRepository repository) {
+    public DiseaseServiceImpl(DiseaseRepository repository,
+                              UserService userService) {
         this.repository = repository;
+        this.userService = userService;
     }
 
     @Transactional
@@ -72,8 +78,11 @@ public class DiseaseServiceImpl implements DiseaseService {
         return repository.save(disease);
     }
 
-//    @Override
-//    public List<Disease> findAllSkipped(Iterable<Long> ids, Period period) {
-//        return repository.findAllByIdIsNotInAndVaccinationAgeIsLessThan(ids, period);
-//    }
+    @Override
+    public Page<Disease> findAllSkipped(Long id, Pageable pageable) {
+        User user = userService.get(id);
+        LocalDate dateOfBirth = user.getDateOfBirth();
+        Period period = Period.between(dateOfBirth, LocalDate.now());
+        return repository.findAllSkipped(id, period, pageable);
+    }
 }
