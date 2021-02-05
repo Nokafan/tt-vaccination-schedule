@@ -43,6 +43,13 @@ public class VaccinationController {
         return vaccinationService.findAllSkipped(userId, pageable).map(vaccinationMapper::entityToDto);
     }
 
+    @PostMapping("{userId}/disease")
+    public Page<VaccinationResponceDto> getVaccinationByDisease(@PathVariable(name = "userId") Long userId,
+                                                                @RequestParam(name = "diseaseName") String diseaseName,
+                                                                Pageable pageable) {
+        return vaccinationService.findAllByDiseaseName(userId, diseaseName, pageable).map(vaccinationMapper::entityToDto);
+    }
+
     @PostMapping
     public VaccinationResponceDto createVaccination(@Valid @RequestBody VaccinationRequestDto requestDto) {
         Vaccination vaccination = vaccinationMapper.dtoToEntity(requestDto);

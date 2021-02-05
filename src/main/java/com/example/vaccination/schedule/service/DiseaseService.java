@@ -12,4 +12,6 @@ public interface DiseaseService extends GeneralService<Disease> {
     Disease update(Long id, DiseaseRequestDto requestDto);
 
     Page<Disease> findAllSkipped(Long id, Pageable pageable);
+
+    List<Disease> findNotDoneDiseaseByDiseaseName(String diseaseName, List<Period> period);
 }
