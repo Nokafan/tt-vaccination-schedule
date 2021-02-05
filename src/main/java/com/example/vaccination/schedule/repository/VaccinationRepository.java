@@ -16,12 +16,7 @@ import java.util.List;
 public interface VaccinationRepository extends JpaRepository<Vaccination, Long> {
     Page<Vaccination> findAllByUser_Id(Long id, Pageable pageable);
 
-//    Page<Vaccination> findAllByDisease_IdAndVaccinationDateTimeBefore(Iterable<Long> ids,
-//                                          LocalDateTime localDateTime,
-//                                          Pageable pageable);
-
-//    List<Vaccination> findAllByUser_Id(Long id);
-
     void deleteAllByIdIsIn(Iterable<Long> ids);
 
+    List<Vaccination> findAllByUser_IdAndDisease_DiseaseName(Long userId, String diseaseName);
 }

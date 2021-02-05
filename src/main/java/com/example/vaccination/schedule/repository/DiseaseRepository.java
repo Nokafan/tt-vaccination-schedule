@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.time.Period;
+import java.util.List;
 
 @Repository
 public interface DiseaseRepository extends JpaRepository<Disease, Long> {
@@ -21,4 +22,6 @@ public interface DiseaseRepository extends JpaRepository<Disease, Long> {
     Page<Disease> findAllSkipped(@Param("userId") Long userId,
                                  @Param("period") Period period,
                                  Pageable pageable);
+
+    List<Disease> findAllByDiseaseNameAndVaccinationAgeIsNotIn(String diseaseName, List<Period> periods);
 }

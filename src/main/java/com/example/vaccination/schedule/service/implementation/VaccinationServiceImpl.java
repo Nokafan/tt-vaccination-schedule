@@ -14,13 +14,16 @@ import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Log4j
 @Service
@@ -110,30 +113,19 @@ public class VaccinationServiceImpl implements VaccinationService {
         return vaccination;
     }
 
-    //    @Override
-//    public List<Vaccination> getAllByUserId(Long id) {
-//        return repository.findAllByUser_Id(id);
-//    }
-
-//    @Override
-//    public Page<Disease> getAllSkippedByUserId(Long id, Pageable pageable) {
-//        User user = userService.get(id);
-//        Period period = Period.between(user.getDateOfBirth(), LocalDate.now());
-//        List<Long> diseaseIds = getAllByUserId(id)
-//                .stream()
-//                .map(v -> v.getDisease().getId())
-//                .collect(Collectors.toList());
-//        List<Disease> diseaseList = diseaseService.findAllSkipped(diseaseIds, period);
-////        List<VaccinationResponceDto> vaccinations = diseaseList.stream()
-////                .map(x -> VaccinationResponceDto.builder()
-////                        .vaccineName("No vaccine")
-////                        .vaccineName(x.getDisease())
-////                        .vaccinationDate((user.getDateOfBirth().plus(period)).atTime(LocalTime.now()))
-////                        .build())
-////                .collect(Collectors.toList());
-////        return new PageImpl<VaccinationResponceDto>(vaccinations, pageable, vaccinations.size());
-//        return new PageImpl<Disease>(diseaseList, pageable, diseaseList.size());
-////        return diseaseList;
-////        return null;
-//    }
+    @Override
+    public Page<Vaccination> findAllByDiseaseName(Long userId, String diseaseName, Pageable pageable) {
+        User user = userService.get(userId);
+        List<Vaccination> vaccinations =
+                vaccinationRepository.findAllByUser_IdAndDisease_DiseaseName(userId, diseaseName);
+        List<Period> periods = vaccinations.stream()
+                .map(x -> x.getDisease().getVaccinationAge())
+                .collect(Collectors.toList());
+        List<Vaccination> notDoneVaccinations = diseaseService.findNotDoneDiseaseByDiseaseName(diseaseName, periods)
+                .stream()
+                .map(disease -> getVaccination(user, disease))
+                .collect(Collectors.toList());
+        vaccinations.addAll(notDoneVaccinations);
+        return new PageImpl<>(vaccinations, pageable, vaccinations.size());
+    }
 }

@@ -1,22 +1,18 @@
 package com.example.vaccination.schedule.service.implementation;
 
 import com.example.vaccination.schedule.dto.DiseaseRequestDto;
-import com.example.vaccination.schedule.dto.VaccinationResponceDto;
 import com.example.vaccination.schedule.entity.Disease;
-import com.example.vaccination.schedule.entity.User;
 import com.example.vaccination.schedule.exception.DataProcessingException;
 import com.example.vaccination.schedule.repository.DiseaseRepository;
 import com.example.vaccination.schedule.service.DiseaseService;
 import com.example.vaccination.schedule.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.List;
 
@@ -85,5 +81,10 @@ public class DiseaseServiceImpl implements DiseaseService {
         LocalDate dateOfBirth = userService.get(id).getDateOfBirth();
         Period period = Period.between(dateOfBirth, LocalDate.now());
         return repository.findAllSkipped(id, period, pageable);
+    }
+
+    @Override
+    public List<Disease> findNotDoneDiseaseByDiseaseName(String diseaseName, List<Period> period) {
+        return repository.findAllByDiseaseNameAndVaccinationAgeIsNotIn(diseaseName, period);
     }
 }
