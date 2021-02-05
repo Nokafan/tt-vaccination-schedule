@@ -34,7 +34,7 @@ public class DiseaseController {
     @PostMapping
     public Disease createDisease(@Valid @RequestBody DiseaseRequestDto requestDto) {
         Disease disease = diseaseService.save(diseaseMapper.dtoToEntity(requestDto));
-        log.info("Disease created id: " + disease.getId() + " name: " + disease.getDisease());
+        log.info("Disease created id: " + disease.getId() + " name: " + disease.getDiseaseName());
         return disease;
     }
 

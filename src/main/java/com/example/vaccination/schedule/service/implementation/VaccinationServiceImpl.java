@@ -2,6 +2,8 @@ package com.example.vaccination.schedule.service.implementation;
 
 import com.example.vaccination.schedule.configuration.Constants;
 import com.example.vaccination.schedule.dto.VaccinationRequestDto;
+import com.example.vaccination.schedule.entity.Disease;
+import com.example.vaccination.schedule.entity.User;
 import com.example.vaccination.schedule.entity.Vaccination;
 import com.example.vaccination.schedule.exception.DataProcessingException;
 import com.example.vaccination.schedule.repository.VaccinationRepository;
@@ -67,8 +69,23 @@ public class VaccinationServiceImpl implements VaccinationService {
     }
 
     @Override
-    public Page<Vaccination> findAllByUserId(Long id, Pageable pageable) {
-        return vaccinationRepository.findAllByUser_Id(id, pageable);
+    public Page<Vaccination> findAllByUserId(Long userId, Pageable pageable) {
+        return vaccinationRepository.findAllByUser_Id(userId, pageable);
+    }
+
+    @Override
+    public Page<Vaccination> findAllSkipped(Long userId, Pageable pageable) {
+        User user = userService.get(userId);
+        return diseaseService.findAllSkipped(userId, pageable).map(disease -> getVaccination(user, disease));
+    }
+
+    private Vaccination getVaccination(User user, Disease disease) {
+        return Vaccination.builder()
+                .vaccineName(disease.getVaccineName())
+                .disease(disease)
+                .user(user)
+                .vaccinationDateTime(user.getDateOfBirth().plus(disease.getVaccinationAge()).atStartOfDay())
+                .build();
     }
 
     @Transactional

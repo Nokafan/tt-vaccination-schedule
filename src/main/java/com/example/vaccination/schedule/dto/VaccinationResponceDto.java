@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 public class VaccinationResponceDto {
     private Long id;
     private String vaccineName;
-    private LocalDateTime vaccinationDate;
-    private Long diseaseId;
+    private String vaccinationDate;
+    private String diseaseName;
     private Long userId;
 }

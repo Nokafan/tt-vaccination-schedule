@@ -25,18 +25,12 @@ import javax.validation.Valid;
 public class VaccinationController {
     private final VaccinationService vaccinationService;
     private final VaccinationMapper vaccinationMapper;
-    private final DiseaseService diseaseService;
-    private final DiseaseMapper diseaseMapper;
 
     @Autowired
     public VaccinationController(VaccinationService vaccinationService,
-                                 VaccinationMapper vaccinationMapper,
-                                 DiseaseService diseaseService,
-                                 DiseaseMapper diseaseMapper) {
+                                 VaccinationMapper vaccinationMapper) {
         this.vaccinationService = vaccinationService;
         this.vaccinationMapper = vaccinationMapper;
-        this.diseaseService = diseaseService;
-        this.diseaseMapper = diseaseMapper;
     }
 
     @PostMapping("/{user_id}/done")
@@ -45,8 +39,8 @@ public class VaccinationController {
     }
 
     @PostMapping("/{user_id}/skipped")
-    public Page<DiseaseResponseDto> getSkippedVaccination(@PathVariable(name = "user_id") Long id, Pageable pageable) {
-        return diseaseService.findAllSkipped(id, pageable).map(diseaseMapper::entityToDto);
+    public Page<VaccinationResponceDto> getSkippedVaccination(@PathVariable(name = "user_id") Long userId, Pageable pageable) {
+        return vaccinationService.findAllSkipped(userId, pageable).map(vaccinationMapper::entityToDto);
     }
 
     @PostMapping

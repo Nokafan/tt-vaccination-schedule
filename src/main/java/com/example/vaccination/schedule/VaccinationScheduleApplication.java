@@ -17,5 +17,4 @@ public class VaccinationScheduleApplication {
     public static void main(String[] args) {
         SpringApplication.run(VaccinationScheduleApplication.class, args);
     }
-
 }

@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -20,12 +21,22 @@ public class Vaccination {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "vaccination_id")
     private Long id;
+
+    @NotNull
     private String email;
+
+    @NotNull
     private String vaccineName;
+
+    @NotNull
     private LocalDateTime vaccinationDateTime;
+
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @NotNull
     @ManyToOne
     @JoinColumn(name = "disease_id")
     private Disease disease;

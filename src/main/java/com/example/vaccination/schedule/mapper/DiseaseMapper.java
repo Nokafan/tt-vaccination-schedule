@@ -17,7 +17,8 @@ public class DiseaseMapper {
                 requestDto.getMonths(),
                 requestDto.getDays());
         return Disease.builder()
-                .disease(requestDto.getDisease())
+                .diseaseName(requestDto.getDisease())
+                .vaccineName(requestDto.getVaccineName())
                 .vaccinationAge(period)
                 .build();
     }
@@ -25,7 +26,8 @@ public class DiseaseMapper {
     public DiseaseResponseDto entityToDto(Disease disease) {
         return DiseaseResponseDto.builder()
                 .id(disease.getId())
-                .disease(disease.getDisease())
+                .disease(disease.getDiseaseName())
+                .vaccineName(disease.getVaccineName())
                 .vaccinationAge(formatPeriod(disease.getVaccinationAge()))
                 .build();
     }
