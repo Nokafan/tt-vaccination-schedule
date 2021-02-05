@@ -5,7 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 import java.time.Period;
 
 @Entity
@@ -18,6 +23,14 @@ public class Disease {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "disease_id")
     private Long id;
-    private String disease;
+
+    @NotNull
+    private String diseaseName;
+
+    @NotNull
+    @Builder.Default
+    private String vaccineName = "Not specified yet";
+
+    @NotNull
     private Period vaccinationAge;
 }

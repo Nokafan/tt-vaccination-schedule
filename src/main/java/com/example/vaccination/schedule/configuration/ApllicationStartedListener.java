@@ -48,40 +48,40 @@ public class ApllicationStartedListener implements ApplicationListener<Applicati
     public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
         log.info("Application started");
         List<Disease> diseases = new ArrayList<>(Arrays.asList(
-                Disease.builder().disease(HEPATITIS_B).vaccinationAge(Period.of(0, 0, 1)).build(),
-                Disease.builder().disease(HEPATITIS_B).vaccinationAge(Period.of(0, 2, 0)).build(),
-                Disease.builder().disease(HEPATITIS_B).vaccinationAge(Period.of(0, 6, 0)).build(),
-                Disease.builder().disease(TUBERCULOSIS).vaccinationAge(Period.of(0, 0, 3)).build(),
-                Disease.builder().disease(DIP_PER_TAT).vaccinationAge(Period.of(0, 2, 0)).build(),
-                Disease.builder().disease(DIP_PER_TAT).vaccinationAge(Period.of(0, 4, 0)).build(),
-                Disease.builder().disease(DIP_PER_TAT).vaccinationAge(Period.of(0, 6, 0)).build(),
-                Disease.builder().disease(DIP_PER_TAT).vaccinationAge(Period.of(0, 18, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(6, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(16, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(26, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(36, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(46, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(56, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(66, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(76, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(86, 0, 0)).build(),
-                Disease.builder().disease(DIP_TAT).vaccinationAge(Period.of(96, 0, 0)).build(),
-                Disease.builder().disease(POLIO).vaccinationAge(Period.of(0, 2, 0)).build(),
-                Disease.builder().disease(POLIO).vaccinationAge(Period.of(0, 4, 0)).build(),
-                Disease.builder().disease(POLIO).vaccinationAge(Period.of(0, 6, 0)).build(),
-                Disease.builder().disease(POLIO).vaccinationAge(Period.of(0, 18, 0)).build(),
-                Disease.builder().disease(POLIO).vaccinationAge(Period.of(6, 0, 0)).build(),
-                Disease.builder().disease(POLIO).vaccinationAge(Period.of(14, 0, 0)).build(),
-                Disease.builder().disease(HEMOFILIC).vaccinationAge(Period.of(0, 2, 0)).build(),
-                Disease.builder().disease(HEMOFILIC).vaccinationAge(Period.of(0, 4, 0)).build(),
-                Disease.builder().disease(HEMOFILIC).vaccinationAge(Period.of(0, 12, 0)).build(),
-                Disease.builder().disease(BAR_RUB_MUM).vaccinationAge(Period.of(0, 12, 0)).build(),
-                Disease.builder().disease(BAR_RUB_MUM).vaccinationAge(Period.of(6, 0, 0)).build()));
+                Disease.builder().diseaseName(HEPATITIS_B).vaccinationAge(Period.of(0, 0, 1)).build(),
+                Disease.builder().diseaseName(HEPATITIS_B).vaccinationAge(Period.of(0, 2, 0)).build(),
+                Disease.builder().diseaseName(HEPATITIS_B).vaccinationAge(Period.of(0, 6, 0)).build(),
+                Disease.builder().diseaseName(TUBERCULOSIS).vaccinationAge(Period.of(0, 0, 3)).build(),
+                Disease.builder().diseaseName(DIP_PER_TAT).vaccinationAge(Period.of(0, 2, 0)).build(),
+                Disease.builder().diseaseName(DIP_PER_TAT).vaccinationAge(Period.of(0, 4, 0)).build(),
+                Disease.builder().diseaseName(DIP_PER_TAT).vaccinationAge(Period.of(0, 6, 0)).build(),
+                Disease.builder().diseaseName(DIP_PER_TAT).vaccinationAge(Period.of(0, 18, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(6, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(16, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(26, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(36, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(46, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(56, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(66, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(76, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(86, 0, 0)).build(),
+                Disease.builder().diseaseName(DIP_TAT).vaccinationAge(Period.of(96, 0, 0)).build(),
+                Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(0, 2, 0)).build(),
+                Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(0, 4, 0)).build(),
+                Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(0, 6, 0)).build(),
+                Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(0, 18, 0)).build(),
+                Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(6, 0, 0)).build(),
+                Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(14, 0, 0)).build(),
+                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 2, 0)).build(),
+                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 4, 0)).build(),
+                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 12, 0)).build(),
+                Disease.builder().diseaseName(BAR_RUB_MUM).vaccinationAge(Period.of(0, 12, 0)).build(),
+                Disease.builder().diseaseName(BAR_RUB_MUM).vaccinationAge(Period.of(6, 0, 0)).build()));
         diseaseService.saveAll(diseases);
         log.info("Diseases saved");
 
         User user = User.builder()
-                .dateOfBirth(LocalDate.now())
+                .dateOfBirth(LocalDate.now().minusYears(1))
                 .email(TEST_I_UA)
                 .name("Bob")
                 .familyName("Marley")

@@ -1,6 +1,7 @@
 package com.example.vaccination.schedule.service.implementation;
 
 import com.example.vaccination.schedule.dto.DiseaseRequestDto;
+import com.example.vaccination.schedule.dto.VaccinationResponceDto;
 import com.example.vaccination.schedule.entity.Disease;
 import com.example.vaccination.schedule.entity.User;
 import com.example.vaccination.schedule.exception.DataProcessingException;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.List;
 
@@ -73,15 +75,14 @@ public class DiseaseServiceImpl implements DiseaseService {
         Period updatedPeriod = Period.of(requestDto.getYears(),
                 requestDto.getMonths(),
                 requestDto.getDays());
-        disease.setDisease(requestDto.getDisease());
+        disease.setDiseaseName(requestDto.getDisease());
         disease.setVaccinationAge(updatedPeriod);
         return repository.save(disease);
     }
 
     @Override
     public Page<Disease> findAllSkipped(Long id, Pageable pageable) {
-        User user = userService.get(id);
-        LocalDate dateOfBirth = user.getDateOfBirth();
+        LocalDate dateOfBirth = userService.get(id).getDateOfBirth();
         Period period = Period.between(dateOfBirth, LocalDate.now());
         return repository.findAllSkipped(id, period, pageable);
     }

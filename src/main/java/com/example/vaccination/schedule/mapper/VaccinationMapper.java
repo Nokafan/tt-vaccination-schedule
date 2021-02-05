@@ -26,8 +26,8 @@ public class VaccinationMapper {
     public VaccinationResponceDto entityToDto(Vaccination vaccination) {
         return VaccinationResponceDto.builder()
                 .id(vaccination.getId())
-                .vaccinationDate(vaccination.getVaccinationDateTime())
-                .diseaseId(vaccination.getDisease().getId())
+                .vaccinationDate(vaccination.getVaccinationDateTime().toString())
+                .diseaseName(vaccination.getDisease().getDiseaseName())
                 .userId(vaccination.getUser().getId())
                 .vaccineName(vaccination.getVaccineName())
                 .build();

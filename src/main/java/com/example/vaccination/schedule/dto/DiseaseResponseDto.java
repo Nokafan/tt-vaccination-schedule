@@ -8,5 +8,6 @@ import lombok.Data;
 public class DiseaseResponseDto {
     private Long id;
     private String disease;
+    private String vaccineName;
     private String vaccinationAge;
 }
