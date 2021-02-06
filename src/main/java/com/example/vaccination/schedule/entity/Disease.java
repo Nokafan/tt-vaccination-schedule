@@ -29,7 +29,7 @@ public class Disease {
 
     @NotNull
     @Builder.Default
-    private String vaccineName = "Not specified yet";
+    private String vaccineName = "Not specified";
 
     @NotNull
     private Period vaccinationAge;

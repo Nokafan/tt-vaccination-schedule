@@ -17,11 +17,8 @@ public interface DiseaseRepository extends JpaRepository<Disease, Long> {
     void deleteAllByIdIsIn(Iterable<Long> ids);
 
     @Query(value = "SELECT d FROM Disease d WHERE d.id NOT IN "
-                        + "(SELECT v.disease.id FROM Vaccination v WHERE v.user.id = :userId "
-                            + "AND d.vaccinationAge < :period)")
-    Page<Disease> findAllSkipped(@Param("userId") Long userId,
-                                 @Param("period") Period period,
-                                 Pageable pageable);
+                        + "(SELECT v.disease.id FROM Vaccination v WHERE v.user.id = :userId)")
+    Page<Disease> findAllSkipped(@Param("userId") Long userId, Pageable pageable);
 
     List<Disease> findAllByDiseaseNameAndVaccinationAgeIsNotIn(String diseaseName, List<Period> periods);
 }

@@ -13,10 +13,10 @@ public class DiseaseRequestDto {
     @NotBlank
     @Length(max = 100, message = "Disease couldn't be less then 0 and more then 100 chars")
     private String disease;
-    @Range(min = 0, max = 100, message = MESSAGE_RANGE)
     @NotBlank
     @Length(max = 100, message = MESSAGE_STRING)
     private String vaccineName;
+    @Range(min = 0, max = 100, message = MESSAGE_RANGE)
     private int years;
     @Range(min = 0, max = 100, message = MESSAGE_RANGE)
     private int months;

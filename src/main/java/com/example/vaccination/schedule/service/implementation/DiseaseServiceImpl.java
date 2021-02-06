@@ -1,8 +1,11 @@
 package com.example.vaccination.schedule.service.implementation;
 
 import com.example.vaccination.schedule.dto.DiseaseRequestDto;
+import com.example.vaccination.schedule.dto.PeriodRequestDto;
 import com.example.vaccination.schedule.entity.Disease;
+import com.example.vaccination.schedule.entity.User;
 import com.example.vaccination.schedule.exception.DataProcessingException;
+import com.example.vaccination.schedule.mapper.PeriodMapper;
 import com.example.vaccination.schedule.repository.DiseaseRepository;
 import com.example.vaccination.schedule.service.DiseaseService;
 import com.example.vaccination.schedule.service.UserService;
@@ -18,73 +21,72 @@ import java.util.List;
 
 @Service
 public class DiseaseServiceImpl implements DiseaseService {
-    private final DiseaseRepository repository;
-    private final UserService userService;
+    private final DiseaseRepository diseaseRepository;
+
 
     @Autowired
-    public DiseaseServiceImpl(DiseaseRepository repository,
-                              UserService userService) {
-        this.repository = repository;
-        this.userService = userService;
+    public DiseaseServiceImpl(DiseaseRepository diseaseRepository) {
+        this.diseaseRepository = diseaseRepository;
     }
 
     @Transactional
     @Override
     public Disease save(Disease disease) {
-        return repository.save(disease);
+        return diseaseRepository.save(disease);
     }
 
     @Transactional
     @Override
     public List<Disease> saveAll(Iterable<Disease> diseases) {
-        return repository.saveAll(diseases);
+        return diseaseRepository.saveAll(diseases);
     }
 
     @Override
     public Page<Disease> getAll(Pageable pageable) {
-        return repository.findAll(pageable);
+        return diseaseRepository.findAll(pageable);
     }
 
     @Override
     public Disease get(Long id) {
-        return repository.findById(id)
+        return diseaseRepository.findById(id)
                 .orElseThrow(() -> new DataProcessingException("Not found Diseases id: " + id));
     }
 
     @Transactional
     @Override
     public void delete(Long id) {
-        repository.deleteById(id);
+        diseaseRepository.deleteById(id);
     }
 
     @Transactional
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {
-        repository.deleteAllByIdIsIn(ids);
+        diseaseRepository.deleteAllByIdIsIn(ids);
     }
 
     @Transactional
     @Override
     public Disease update(Long id, DiseaseRequestDto requestDto) {
-        Disease disease = repository.findById(id)
+        Disease disease = diseaseRepository.findById(id)
                 .orElseThrow(() -> new DataProcessingException("Not found Diseases id: " + id));
-        Period updatedPeriod = Period.of(requestDto.getYears(),
-                requestDto.getMonths(),
-                requestDto.getDays());
         disease.setDiseaseName(requestDto.getDisease());
-        disease.setVaccinationAge(updatedPeriod);
-        return repository.save(disease);
+        disease.setVaccinationAge(getUpdatedPeriod(requestDto));
+        return diseaseRepository.save(disease);
     }
 
     @Override
     public Page<Disease> findAllSkipped(Long id, Pageable pageable) {
-        LocalDate dateOfBirth = userService.get(id).getDateOfBirth();
-        Period period = Period.between(dateOfBirth, LocalDate.now());
-        return repository.findAllSkipped(id, period, pageable);
+        return diseaseRepository.findAllSkipped(id, pageable);
     }
 
     @Override
     public List<Disease> findNotDoneDiseaseByDiseaseName(String diseaseName, List<Period> period) {
-        return repository.findAllByDiseaseNameAndVaccinationAgeIsNotIn(diseaseName, period);
+        return diseaseRepository.findAllByDiseaseNameAndVaccinationAgeIsNotIn(diseaseName, period);
+    }
+
+    private Period getUpdatedPeriod(DiseaseRequestDto requestDto) {
+        return Period.of(requestDto.getYears(),
+                requestDto.getMonths(),
+                requestDto.getDays());
     }
 }

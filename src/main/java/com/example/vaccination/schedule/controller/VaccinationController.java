@@ -1,6 +1,7 @@
 package com.example.vaccination.schedule.controller;
 
 import com.example.vaccination.schedule.dto.DiseaseResponseDto;
+import com.example.vaccination.schedule.dto.PeriodRequestDto;
 import com.example.vaccination.schedule.dto.VaccinationRequestDto;
 import com.example.vaccination.schedule.dto.VaccinationResponceDto;
 import com.example.vaccination.schedule.entity.Disease;
@@ -20,6 +21,7 @@ import javax.validation.Valid;
 
 @Log4j
 @RestController
+
 @RequestMapping("/api/vaccination")
 @Validated
 public class VaccinationController {
@@ -33,21 +35,28 @@ public class VaccinationController {
         this.vaccinationMapper = vaccinationMapper;
     }
 
-    @PostMapping("/{user_id}/done")
+    @GetMapping("/{user_id}/done")
     public Page<VaccinationResponceDto> getDoneVaccination(@PathVariable(name = "user_id") Long id, Pageable pageable) {
         return vaccinationService.findAllByUserId(id, pageable).map(vaccinationMapper::entityToDto);
     }
 
-    @PostMapping("/{user_id}/skipped")
+    @GetMapping("/{user_id}/skipped")
     public Page<VaccinationResponceDto> getSkippedVaccination(@PathVariable(name = "user_id") Long userId, Pageable pageable) {
         return vaccinationService.findAllSkipped(userId, pageable).map(vaccinationMapper::entityToDto);
     }
 
-    @PostMapping("{userId}/disease")
+    @GetMapping("{userId}/disease")
     public Page<VaccinationResponceDto> getVaccinationByDisease(@PathVariable(name = "userId") Long userId,
                                                                 @RequestParam(name = "diseaseName") String diseaseName,
-                                                                Pageable pageable) {
-        return vaccinationService.findAllByDiseaseName(userId, diseaseName, pageable).map(vaccinationMapper::entityToDto);
+                                                                Pageable page) {
+        return vaccinationService.findAllByDiseaseName(userId, diseaseName, page).map(vaccinationMapper::entityToDto);
+    }
+
+    @GetMapping("{userId}/period")
+    public Page<VaccinationResponceDto> getVaccinationByPeriod(@PathVariable(name = "userId") Long userId,
+                                                               @Valid @RequestBody PeriodRequestDto requestDto,
+                                                               Pageable page) {
+        return vaccinationService.findAllByFuturePeriod(userId, requestDto, page).map(vaccinationMapper::entityToDto);
     }
 
     @PostMapping
