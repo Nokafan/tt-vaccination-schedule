@@ -58,7 +58,7 @@ public class UserController {
         log.info("User id: " + id + " deleted.");
     }
 
-    @PostMapping("/page")
+    @GetMapping("/page")
     public List<UserResponseDto> getAllUsers(Pageable pageable) {
         return userService.getAll(pageable).getContent()
                 .stream()

@@ -28,7 +28,7 @@ public class DiseaseMapper {
                 .id(disease.getId())
                 .disease(disease.getDiseaseName())
                 .vaccineName(disease.getVaccineName())
-                .vaccinationAge(formatPeriod(disease.getVaccinationAge()))
+                .vaccinationAge(disease.getVaccinationAge())
                 .build();
     }
 

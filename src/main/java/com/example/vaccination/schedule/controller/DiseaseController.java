@@ -38,7 +38,7 @@ public class DiseaseController {
         return disease;
     }
 
-    @PostMapping("/page")
+    @GetMapping("/page")
     public Page<DiseaseResponseDto> getAllDisease(Pageable pageable) {
          return diseaseService.getAll(pageable).map(diseaseMapper::entityToDto);
     }

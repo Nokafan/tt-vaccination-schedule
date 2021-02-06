@@ -17,7 +17,6 @@ import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 @Log4j
@@ -25,7 +24,7 @@ import java.util.List;
 public class ApllicationStartedListener implements ApplicationListener<ApplicationStartedEvent> {
     public static final String HEPATITIS_B = "Гепатиту В";
     public static final String TEST_I_UA = "test@i.ua";
-    public static final String OOO_DARNITSA = "OOO Дарниця";
+    public static final String DARNITSA = "OOO Дарниця";
     public static final String TUBERCULOSIS = "Туберкульозу";
     public static final String DIP_PER_TAT = "Дифтерії, кашлюка, правця";
     public static final String DIP_TAT = "Дифтерії, правця";
@@ -48,6 +47,9 @@ public class ApllicationStartedListener implements ApplicationListener<Applicati
     public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
         log.info("Application started");
         List<Disease> diseases = new ArrayList<>(Arrays.asList(
+                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 2, 0)).build(),
+                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 4, 0)).build(),
+                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 12, 0)).build(),
                 Disease.builder().diseaseName(HEPATITIS_B).vaccinationAge(Period.of(0, 0, 1)).build(),
                 Disease.builder().diseaseName(HEPATITIS_B).vaccinationAge(Period.of(0, 2, 0)).build(),
                 Disease.builder().diseaseName(HEPATITIS_B).vaccinationAge(Period.of(0, 6, 0)).build(),
@@ -72,9 +74,6 @@ public class ApllicationStartedListener implements ApplicationListener<Applicati
                 Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(0, 18, 0)).build(),
                 Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(6, 0, 0)).build(),
                 Disease.builder().diseaseName(POLIO).vaccinationAge(Period.of(14, 0, 0)).build(),
-                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 2, 0)).build(),
-                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 4, 0)).build(),
-                Disease.builder().diseaseName(HEMOFILIC).vaccinationAge(Period.of(0, 12, 0)).build(),
                 Disease.builder().diseaseName(BAR_RUB_MUM).vaccinationAge(Period.of(0, 12, 0)).build(),
                 Disease.builder().diseaseName(BAR_RUB_MUM).vaccinationAge(Period.of(6, 0, 0)).build()));
         diseaseService.saveAll(diseases);
@@ -95,7 +94,7 @@ public class ApllicationStartedListener implements ApplicationListener<Applicati
                 .vaccinationDateTime(LocalDateTime.now())
                 .user(repositoryUser)
                 .email(TEST_I_UA)
-                .vaccineName(OOO_DARNITSA)
+                .vaccineName(DARNITSA)
                 .disease(diseaseService.get(1L))
                 .build();
         log.info("VaccinationHistory created " + vaccination.toString());

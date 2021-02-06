@@ -1,5 +1,6 @@
 package com.example.vaccination.schedule.service;
 
+import com.example.vaccination.schedule.dto.PeriodRequestDto;
 import com.example.vaccination.schedule.dto.VaccinationRequestDto;
 import com.example.vaccination.schedule.entity.Vaccination;
 import org.springframework.data.domain.Page;
@@ -13,4 +14,7 @@ public interface VaccinationService extends GeneralService<Vaccination> {
     Page<Vaccination> findAllSkipped(Long userId, Pageable pageable);
 
     Page<Vaccination> findAllByDiseaseName(Long userId, String diseaseName, Pageable pageable);
+
+    Page<Vaccination> findAllByFuturePeriod(Long userId, PeriodRequestDto requestDto, Pageable page
+    );
 }
