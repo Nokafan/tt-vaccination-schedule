@@ -6,11 +6,10 @@ import com.example.vaccination.schedule.dto.VaccinationResponceDto;
 import com.example.vaccination.schedule.entity.Vaccination;
 import com.example.vaccination.schedule.service.DiseaseService;
 import com.example.vaccination.schedule.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 @Component
 public class VaccinationMapper {

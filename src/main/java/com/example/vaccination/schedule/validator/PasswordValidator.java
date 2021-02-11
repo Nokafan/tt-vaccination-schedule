@@ -1,7 +1,5 @@
 package com.example.vaccination.schedule.validator;
 
-import com.example.vaccination.schedule.dto.UserRequestDto;
-
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 

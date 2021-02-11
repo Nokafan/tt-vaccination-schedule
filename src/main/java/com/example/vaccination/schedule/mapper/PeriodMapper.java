@@ -1,10 +1,9 @@
 package com.example.vaccination.schedule.mapper;
 
 import com.example.vaccination.schedule.dto.PeriodRequestDto;
+import java.time.Period;
 import lombok.Data;
 import org.springframework.stereotype.Component;
-
-import java.time.Period;
 
 @Data
 @Component

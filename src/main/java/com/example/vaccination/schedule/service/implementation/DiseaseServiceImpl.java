@@ -1,28 +1,22 @@
 package com.example.vaccination.schedule.service.implementation;
 
 import com.example.vaccination.schedule.dto.DiseaseRequestDto;
-import com.example.vaccination.schedule.dto.PeriodRequestDto;
 import com.example.vaccination.schedule.entity.Disease;
-import com.example.vaccination.schedule.entity.User;
 import com.example.vaccination.schedule.exception.DataProcessingException;
-import com.example.vaccination.schedule.mapper.PeriodMapper;
 import com.example.vaccination.schedule.repository.DiseaseRepository;
 import com.example.vaccination.schedule.service.DiseaseService;
-import com.example.vaccination.schedule.service.UserService;
+import java.time.Period;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
-import java.time.Period;
-import java.util.List;
-
 @Service
 public class DiseaseServiceImpl implements DiseaseService {
     private final DiseaseRepository diseaseRepository;
-
 
     @Autowired
     public DiseaseServiceImpl(DiseaseRepository diseaseRepository) {
@@ -41,6 +35,7 @@ public class DiseaseServiceImpl implements DiseaseService {
         return diseaseRepository.saveAll(diseases);
     }
 
+    @Cacheable("diseases")
     @Override
     public Page<Disease> getAll(Pageable pageable) {
         return diseaseRepository.findAll(pageable);

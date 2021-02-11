@@ -6,18 +6,15 @@ import com.example.vaccination.schedule.entity.User;
 import com.example.vaccination.schedule.exception.DataProcessingException;
 import com.example.vaccination.schedule.repository.UserRepository;
 import com.example.vaccination.schedule.service.UserService;
-import com.example.vaccination.schedule.service.VaccinationService;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
 
 @Log4j
 @Service
@@ -28,7 +25,6 @@ public class UserServiceImpl implements UserService {
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
 
     @Transactional(rollbackFor = Exception.class)
     @Override
@@ -70,8 +66,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findByEmail(String email) {
-        return userRepository.findByEmail(email)
-                .orElseThrow(() -> new DataProcessingException("User with email: " + email + " not found"));
+        return userRepository.findByEmail(email).orElseThrow(() ->
+                        new DataProcessingException("User with email: " + email + " not found"));
     }
 
     @Transactional(rollbackFor = Exception.class)

@@ -2,11 +2,10 @@ package com.example.vaccination.schedule.service;
 
 import com.example.vaccination.schedule.dto.DiseaseRequestDto;
 import com.example.vaccination.schedule.entity.Disease;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
 import java.time.Period;
 import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface DiseaseService extends GeneralService<Disease> {
     Disease update(Long id, DiseaseRequestDto requestDto);

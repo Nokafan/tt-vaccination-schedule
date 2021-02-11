@@ -3,11 +3,10 @@ package com.example.vaccination.schedule.mapper;
 import com.example.vaccination.schedule.dto.DiseaseRequestDto;
 import com.example.vaccination.schedule.dto.DiseaseResponseDto;
 import com.example.vaccination.schedule.entity.Disease;
-import org.springframework.stereotype.Component;
-import org.threeten.extra.AmountFormats;
-
 import java.time.Period;
 import java.util.Locale;
+import org.springframework.stereotype.Component;
+import org.threeten.extra.AmountFormats;
 
 @Component
 public class DiseaseMapper {

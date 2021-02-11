@@ -2,7 +2,6 @@ package com.example.vaccination.schedule.controller;
 
 import com.example.vaccination.schedule.exception.DataProcessingException;
 import com.example.vaccination.schedule.exception.ExceptionDetails;
-
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.Date;
 import java.util.LinkedHashMap;
@@ -43,7 +42,8 @@ public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler
 
     }
 
-    @ExceptionHandler({DataProcessingException.class, SQLIntegrityConstraintViolationException.class})
+    @ExceptionHandler({DataProcessingException.class,
+            SQLIntegrityConstraintViolationException.class})
     public ResponseEntity<Object> handleNotFoundException(Exception exception,
                                                           WebRequest webRequest) {
         ExceptionDetails exceptionDetails = new ExceptionDetails(new Date(),

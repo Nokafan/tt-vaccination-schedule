@@ -4,12 +4,9 @@ import com.example.vaccination.schedule.configuration.Constants;
 import com.example.vaccination.schedule.dto.UserRequestDto;
 import com.example.vaccination.schedule.dto.UserResponseDto;
 import com.example.vaccination.schedule.entity.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Component;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import org.springframework.stereotype.Component;
 
 @Component
 public class UserMapper {

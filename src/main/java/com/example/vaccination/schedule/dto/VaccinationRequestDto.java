@@ -1,14 +1,13 @@
 package com.example.vaccination.schedule.dto;
 
-import com.example.vaccination.schedule.configuration.Constants;
+import static com.example.vaccination.schedule.configuration.Constants.PATTERN_DATE_TIME;
+
 import com.example.vaccination.schedule.validator.ValidEmail;
+import javax.validation.constraints.NotBlank;
 import lombok.Builder;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
 import org.springframework.format.annotation.DateTimeFormat;
-
-import javax.validation.constraints.NotBlank;
-import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -17,7 +16,7 @@ public class VaccinationRequestDto {
     private String email;
     @NotBlank
     private String vaccineName;
-    @DateTimeFormat(pattern = Constants.PATTERN_DATE_TIME)
+    @DateTimeFormat(pattern = PATTERN_DATE_TIME)
     private String vaccinationDateTime;
     @Range
     private Long userId;
