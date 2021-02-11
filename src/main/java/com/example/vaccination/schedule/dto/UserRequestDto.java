@@ -1,6 +1,7 @@
 package com.example.vaccination.schedule.dto;
 
 import com.example.vaccination.schedule.configuration.Constants;
+import com.example.vaccination.schedule.validator.ValidPassword;
 import com.example.vaccination.schedule.validator.ValidEmail;
 import com.example.vaccination.schedule.validator.ValidName;
 import lombok.Data;
@@ -17,6 +18,7 @@ public class UserRequestDto {
     private String dateOfBirth;
     @ValidEmail
     private String email;
+    @ValidPassword
     private String password;
     private boolean deleted;
 }

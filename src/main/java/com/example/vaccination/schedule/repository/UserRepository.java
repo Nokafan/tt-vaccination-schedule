@@ -6,11 +6,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.Optional;
+
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    Page<User> findAllById(Long id, Pageable pageable);
+//    Page<User> findAllById(Long id, Pageable pageable);
 
     void deleteAllByIdIsIn(Iterable<Long> ids);
 
-    User findByEmail(String email);
+    Optional<User> findByEmail(String email);
 }

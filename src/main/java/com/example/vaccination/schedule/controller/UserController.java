@@ -9,6 +9,7 @@ import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,11 +24,14 @@ import java.util.stream.Collectors;
 public class UserController {
     private final UserService userService;
     private final UserMapper userMapper;
+    private final BCryptPasswordEncoder passwordEncoder;
+
 
     @Autowired
-    public UserController(UserService userService, UserMapper userMapper) {
+    public UserController(UserService userService, UserMapper userMapper, BCryptPasswordEncoder passwordEncoder) {
         this.userService = userService;
         this.userMapper = userMapper;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @GetMapping("/{id}")
@@ -35,9 +39,10 @@ public class UserController {
         return userMapper.entityToDto(userService.get(id));
     }
 
-    @PostMapping
+    @PostMapping("/registration")
     @ResponseStatus(HttpStatus.CREATED)
     public UserResponseDto createUser(@Valid @RequestBody UserRequestDto requestDto) {
+        requestDto.setPassword(passwordEncoder.encode(requestDto.getPassword()));
         User user = userService.save(userMapper.userDtoToEntity(requestDto));
         log.info("User created id: " + user.getId() + " email: " + user.getEmail());
         return userMapper.entityToDto(user);
@@ -46,6 +51,7 @@ public class UserController {
     @PutMapping("/{id}")
     public UserResponseDto updateUser(@PathVariable(name = "id") Long id,
                                       @Valid @RequestBody UserRequestDto requestDto) {
+        requestDto.setPassword(passwordEncoder.encode(requestDto.getPassword()));
         User user = userService.update(id, requestDto);
         log.info("User id: " + id + " updated.");
         return userMapper.entityToDto(user);
