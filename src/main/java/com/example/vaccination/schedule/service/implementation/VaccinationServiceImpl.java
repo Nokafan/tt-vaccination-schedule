@@ -46,13 +46,13 @@ public class VaccinationServiceImpl implements VaccinationService {
     }
 
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public Vaccination save(Vaccination vaccination) {
         return vaccinationRepository.save(vaccination);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public List<Vaccination> saveAll(Iterable<Vaccination> vaccinations) {
         return vaccinationRepository.saveAll(vaccinations);
@@ -69,7 +69,7 @@ public class VaccinationServiceImpl implements VaccinationService {
                 new DataProcessingException("Not found VaccinationHistory with id: " + id));
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public void delete(Long id) {
         vaccinationRepository.deleteById(id);
@@ -92,13 +92,13 @@ public class VaccinationServiceImpl implements VaccinationService {
         return new PageImpl<>(vaccinationList, pageable, vaccinationList.size());
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {
         vaccinationRepository.deleteAllByIdIsIn(ids);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public Vaccination update(Long id, VaccinationRequestDto requestDto) {
         Vaccination vaccination = vaccinationRepository.findById(id).orElseThrow(() ->

@@ -29,13 +29,13 @@ public class DiseaseServiceImpl implements DiseaseService {
         this.diseaseRepository = diseaseRepository;
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public Disease save(Disease disease) {
         return diseaseRepository.save(disease);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public List<Disease> saveAll(Iterable<Disease> diseases) {
         return diseaseRepository.saveAll(diseases);
@@ -52,19 +52,19 @@ public class DiseaseServiceImpl implements DiseaseService {
                 .orElseThrow(() -> new DataProcessingException("Not found Diseases id: " + id));
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public void delete(Long id) {
         diseaseRepository.deleteById(id);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public void deleteAllByIds(Iterable<Long> ids) {
         diseaseRepository.deleteAllByIdIsIn(ids);
     }
 
-    @Transactional
+    @Transactional(rollbackFor = Exception.class)
     @Override
     public Disease update(Long id, DiseaseRequestDto requestDto) {
         Disease disease = diseaseRepository.findById(id)

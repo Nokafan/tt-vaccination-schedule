@@ -10,6 +10,7 @@ import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -34,13 +35,16 @@ public class ApllicationStartedListener implements ApplicationListener<Applicati
     private final DiseaseService diseaseService;
     private final UserService userService;
     private final VaccinationService vaccinationService;
+    private final BCryptPasswordEncoder passwordEncoder;
 
     @Autowired
     public ApllicationStartedListener(DiseaseService diseaseService, UserService userService,
-                                      VaccinationService vaccinationService) {
+                                      VaccinationService vaccinationService, BCryptPasswordEncoder passwordEncoder) {
         this.diseaseService = diseaseService;
         this.userService = userService;
         this.vaccinationService = vaccinationService;
+
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -84,7 +88,7 @@ public class ApllicationStartedListener implements ApplicationListener<Applicati
                 .email(TEST_I_UA)
                 .name("Bob")
                 .familyName("Marley")
-                .password("password")
+                .password(passwordEncoder.encode("Password1"))
                 .build();
         log.info("User created");
         User repositoryUser = userService.save(user);

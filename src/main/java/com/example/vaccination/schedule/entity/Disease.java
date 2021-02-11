@@ -24,13 +24,13 @@ public class Disease {
     @Column(name = "disease_id")
     private Long id;
 
-    @NotNull
+    @NotNull(message = "Disease name can't be null")
     private String diseaseName;
 
     @NotNull
     @Builder.Default
     private String vaccineName = "Not specified";
 
-    @NotNull
+    @NotNull(message = "Period can't be null")
     private Period vaccinationAge;
 }
