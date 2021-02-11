@@ -15,6 +15,6 @@ public interface VaccinationService extends GeneralService<Vaccination> {
 
     Page<Vaccination> findAllByDiseaseName(Long userId, String diseaseName, Pageable pageable);
 
-    Page<Vaccination> findAllByFuturePeriod(Long userId, PeriodRequestDto requestDto, Pageable page
-    );
+    Page<Vaccination> findAllByFuturePeriod(Long userId,
+                                            PeriodRequestDto requestDto, Pageable page);
 }

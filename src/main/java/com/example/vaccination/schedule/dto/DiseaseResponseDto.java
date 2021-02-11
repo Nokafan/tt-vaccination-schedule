@@ -1,9 +1,8 @@
 package com.example.vaccination.schedule.dto;
 
+import java.time.Period;
 import lombok.Builder;
 import lombok.Data;
-
-import java.time.Period;
 
 @Data
 @Builder
