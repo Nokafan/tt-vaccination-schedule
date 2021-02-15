@@ -9,7 +9,9 @@ public interface GeneralService<T> {
 
     List<T> saveAll(Iterable<T> iterableEntities);
 
-    Page<T> getAll(Pageable pageable);
+    Page<T> getAllByPage(Pageable pageable);
+
+    List<T> getAll();
 
     T get(Long entityId);
 

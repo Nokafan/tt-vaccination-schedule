@@ -43,7 +43,7 @@ public class DiseaseController {
 
     @GetMapping("/page")
     public Page<DiseaseResponseDto> getAllDisease(Pageable pageable) {
-        return diseaseService.getAll(pageable).map(diseaseMapper::entityToDto);
+        return diseaseService.getAllByPage(pageable).map(diseaseMapper::entityToDto);
     }
 
     @GetMapping("/{id}")

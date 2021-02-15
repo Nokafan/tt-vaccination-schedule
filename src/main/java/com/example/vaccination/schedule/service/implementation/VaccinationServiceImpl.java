@@ -58,8 +58,13 @@ public class VaccinationServiceImpl implements VaccinationService {
     }
 
     @Override
-    public Page<Vaccination> getAll(Pageable pageable) {
+    public Page<Vaccination> getAllByPage(Pageable pageable) {
         return vaccinationRepository.findAll(pageable);
+    }
+
+    @Override
+    public List<Vaccination> getAll() {
+        return vaccinationRepository.findAll();
     }
 
     @Override
@@ -125,9 +130,9 @@ public class VaccinationServiceImpl implements VaccinationService {
         User user = userService.get(userId);
         Period periodToSearch = periodMapper.dtoToEntity(requestDto);
         LocalDateTime endTime = getLocalDateTimeFromPeriod(periodToSearch);
-        List<Vaccination> vaccinations = diseaseService
-                .getAll(page).map(disease -> getVaccination(user, disease)).getContent()
+        List<Vaccination> vaccinations = diseaseService.getAll()
                 .stream()
+                .map(disease -> getVaccination(user, disease))
                 .filter(vaccination -> vaccination.getVaccinationDateTime()
                         .isAfter(LocalDateTime.now()))
                 .filter(vaccination -> vaccination.getVaccinationDateTime()
@@ -168,11 +173,12 @@ public class VaccinationServiceImpl implements VaccinationService {
 
     private Vaccination updateVaccination(VaccinationRequestDto requestDto,
                                           Vaccination vaccination) {
-        vaccination.setEmail(requestDto.getEmail());
+        User user = userService.get(requestDto.getUserId());
+        vaccination.setEmail(user.getEmail());
         vaccination.setVaccineName(requestDto.getVaccineName());
         vaccination.setVaccinationDateTime(LocalDateTime.parse(requestDto.getVaccinationDateTime(),
                 DateTimeFormatter.ofPattern(Constants.PATTERN_DATE_TIME)));
-        vaccination.setUser(userService.get(requestDto.getUserId()));
+        vaccination.setUser(user);
         vaccination.setDisease(diseaseService.get(requestDto.getDiseaseId()));
         return vaccination;
     }

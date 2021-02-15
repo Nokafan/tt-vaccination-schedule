@@ -10,7 +10,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Data
 public class UserRequestDto {
-
     @ValidName
     private String name;
     @ValidName

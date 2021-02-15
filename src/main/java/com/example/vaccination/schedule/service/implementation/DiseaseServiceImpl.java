@@ -37,8 +37,13 @@ public class DiseaseServiceImpl implements DiseaseService {
 
     @Cacheable("diseases")
     @Override
-    public Page<Disease> getAll(Pageable pageable) {
+    public Page<Disease> getAllByPage(Pageable pageable) {
         return diseaseRepository.findAll(pageable);
+    }
+
+    @Override
+    public List<Disease> getAll() {
+        return diseaseRepository.findAll();
     }
 
     @Override

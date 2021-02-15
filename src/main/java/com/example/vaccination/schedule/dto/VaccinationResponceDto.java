@@ -8,7 +8,7 @@ import lombok.Data;
 public class VaccinationResponceDto {
     private Long id;
     private String vaccineName;
-    private String vaccinationDate;
+    private String vaccinationDateTime;
     private String diseaseName;
     private Long userId;
 }
