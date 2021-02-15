@@ -2,16 +2,27 @@
 API для відображення виконаних та майбутніх щеплень з можливістю внесення нових даних.
 
 In project has been used:
+
 JDK 14 java version 11
+
 MySql 8.0 DB
+
 Tomcat 9.0.37
+
 Spring Boot 2.4.2
+
 Lombok
+
 Log4j
+
 Spring security
+
 JWT authentication and authorization based on auth0 bearer token
+
 Jackson jason mapping
+
 Spring boot cache
+
 Maven checkstyle plugin
 
 Before start make sure that you have MySql DB and MySql Workbench on your pc.
