@@ -1,0 +1,797 @@
+{
+	"info": {
+		"_postman_id": "15238c4c-7423-47cc-a0c9-edd3ac56d82a",
+		"name": "vaccination",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/user/registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\" : \"Alice\",\r\n\"familyName\" : \"Selezneva\",\r\n\"dateOfBirth\" : \"04.04.1982\",\r\n\"email\" : \"test@ii.ua\", \r\n\"password\" : \"Password123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\" : \"Alice\",\r\n\"familyName\" : \"Selezneva\",\r\n\"dateOfBirth\" : \"04.04.1982\",\r\n\"email\" : \"test1@i.ua\", \r\n\"password\" : \"Password123\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Au",
+						"value": "UGFzc3dvcmQxCg==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"test@ii.ua\",\r\n    \"password\" : \"Password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "\"test@ii.ua\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic UGFzc3dvcmQxCg==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/disease/page?page=3&size=5&sort=id,desc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTI4NjcwfQ.Wr3XR3Ijk29C7S5FvW0E92dUb8sIcuE9EvcXmH-1x9Yrr02Sw4tvAbQk9-MXAhHf9NQgkjD0JZy4mMKpFeY-jQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/disease/page?page=3&size=5&sort=id,desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"disease",
+						"page"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "id,desc"
+						},
+						{
+							"key": "sort",
+							"value": "vaccinationAge,desc",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/disease",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"disease\" : \"Грипу\",\r\n\"vaccineName\" : \"OOO Не проходите мимо\",\r\n\"years\" : 10,\r\n\"months\" : 10,\r\n\"days\" : 10}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/disease",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"disease"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\" : \"Алиса\",\r\n\"familyName\" : \"Selezneva Clon\",\r\n\"dateOfBirth\" : \"04.04.1982\",\r\n\"email\" : \"test@ii.ua\", \r\n\"password\" : \"Password123\",\r\n\"deleted\" : true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/disease/30",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/disease/30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"disease",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/disease",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"disease\" : \"Грипу\",\r\n\"vaccineName\" : \"OOO Не проходите мимо\",\r\n\"years\" : 10,\r\n\"months\" : 10,\r\n\"days\" : 10}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/disease",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"disease"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/disease/31",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"disease\" : \"ГЕПАТИТ А\",\r\n\"vaccineName\" : \"We are the chempions\",\r\n\"years\" : 11,\r\n\"months\" : 10,\r\n\"days\" : 3}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/disease/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"disease",
+						"31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/vaccination/1/done?page=0&size=5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vaccination/1/done?page=0&size=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccination",
+						"1",
+						"done"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "disease,desc",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "desc",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "id,asc",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/vaccination/1/skipped?page=0&size=5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vaccination/1/skipped?size=5&page=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccination",
+						"1",
+						"skipped"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "diseaseName,desc",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/vaccination/1/disease?diseaseName=Гемофільної інфекції&number=0&size=5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vaccination/1/disease?diseaseName=Гемофільної інфекції&number=0&size=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccination",
+						"1",
+						"disease"
+					],
+					"query": [
+						{
+							"key": "diseaseName",
+							"value": "Гемофільної інфекції"
+						},
+						{
+							"key": "number",
+							"value": "0"
+						},
+						{
+							"key": "sort",
+							"value": "id, desc",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/vaccination/1/period?page=0&sort=vaccineName&size=5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"years\" : 90,\r\n\"months\" : 1,\r\n\"days\" :1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vaccination/1/period?page=0&sort=vaccineName&size=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccination",
+						"1",
+						"period"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "sort",
+							"value": "vaccineName"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "vaccinationDateTime",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/vaccination/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\" : \"TESTii@i.ua\",\r\n\"vaccineName\" : \"Testname\",\r\n\"vaccinationDateTime\": \"24.03.1980 13:30\",\r\n\"userId\" : 2,\r\n\"diseaseId\" : 2}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vaccination/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccination",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/vaccination/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vaccination/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccination",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/disease/5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/disease/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"disease",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/disease/30",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0QGlpLnVhIiwiZXhwIjoxNjEzOTg5MjIxfQ.qOIKVjJ-j-Y4xjD8gpvj_FcwjYcV_MH40B3XM71HCAe9ZMtmiPZ08MnTNdTBNveyXzSC7f0eOxRca79Ik7outA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/disease/30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"disease",
+						"30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
