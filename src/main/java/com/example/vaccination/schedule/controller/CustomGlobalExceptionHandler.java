@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -43,6 +44,7 @@ public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler
     }
 
     @ExceptionHandler({DataProcessingException.class,
+            EmptyResultDataAccessException.class,
             SQLIntegrityConstraintViolationException.class})
     public ResponseEntity<Object> handleNotFoundException(Exception exception,
                                                           WebRequest webRequest) {
