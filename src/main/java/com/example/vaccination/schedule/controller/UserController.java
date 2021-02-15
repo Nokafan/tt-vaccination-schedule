@@ -73,7 +73,7 @@ public class UserController {
 
     @GetMapping("/page")
     public List<UserResponseDto> getAllUsers(Pageable pageable) {
-        return userService.getAll(pageable).getContent()
+        return userService.getAllByPage(pageable).getContent()
                 .stream()
                 .map(userMapper::entityToDto)
                 .collect(Collectors.toList());
