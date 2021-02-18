@@ -24,14 +24,14 @@ import java.util.Arrays;
 import java.util.List;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.event.ApplicationStartedEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Log4j
 @Component
-public class ApllicationStartedListener implements ApplicationListener<ApplicationStartedEvent> {
+public class ApllicationStartedListener implements ApplicationListener<ContextRefreshedEvent> {
     private final DiseaseService diseaseService;
     private final UserService userService;
     private final VaccinationService vaccinationService;
@@ -49,7 +49,7 @@ public class ApllicationStartedListener implements ApplicationListener<Applicati
     }
 
     @Override
-    public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
+    public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
         log.info("Application started");
         List<Disease> diseases = new ArrayList<>(Arrays.asList(
                 Disease.builder()

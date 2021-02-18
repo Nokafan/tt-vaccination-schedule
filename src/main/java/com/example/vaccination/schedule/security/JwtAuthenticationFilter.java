@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 import javax.servlet.FilterChain;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -58,7 +59,8 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                                             Authentication auth) throws IOException {
         String token = JWT.create()
                 .withSubject(((User) auth.getPrincipal()).getUsername())
-                .withExpiresAt(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
+                .withExpiresAt(new Date(System.currentTimeMillis()
+                        + TimeUnit.DAYS.toMillis(EXPIRATION_TIME)))
                 .sign(Algorithm.HMAC512(SECRET.getBytes()));
         res.addHeader(HEADER_STRING, TOKEN_PREFIX + token);
 
