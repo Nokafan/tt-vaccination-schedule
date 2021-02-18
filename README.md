@@ -37,4 +37,5 @@ Download and add Lombok plugin if you do not have it installed yet.
 Annotation processor in our IDE should be enabled (Lombok plugin require it).
 
 Download and install Postman, for testing api use data from file in resource directory named vaccination.postman_collection.json, you can import it directly to postman.
+Pay attention to the valid token, it is expired after 30 days, so probably you will have to refresh it. Login by registered user, and you will receive the new one, in Postmen on Authorisation page choose Type Bearer Token, it should be working good by authomaticaly adding the token.  
 
